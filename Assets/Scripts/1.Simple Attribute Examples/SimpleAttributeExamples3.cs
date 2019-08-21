@@ -13,7 +13,6 @@ namespace D_Game.Demo
         [HorizontalGroup("Split", Width = 100), HideLabel, PreviewField(80)]
         public Texture2D Icon;
 
-
         [VerticalGroup("Split/Properties")]
         public string MinionName;
 
