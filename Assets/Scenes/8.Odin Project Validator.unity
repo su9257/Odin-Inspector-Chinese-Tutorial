@@ -144,7 +144,7 @@ MonoBehaviour:
   Name: 
   Prefab: {fileID: 0}
   Child: {fileID: 0}
-  OddNumber: 0
+  OddNumber: 312
 --- !u!4 &274225036
 Transform:
   m_ObjectHideFlags: 0

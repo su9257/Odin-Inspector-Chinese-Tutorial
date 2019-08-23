@@ -75,6 +75,9 @@
     <Compile Include="Assets\Scripts\6.Attribute Expressions\AttributeExpressions1.cs" />
     <Compile Include="Assets\Scripts\6.Attribute Expressions\AttributeExpressions2.cs" />
     <Compile Include="Assets\Scripts\6.Attribute Expressions\AttributeExpressions3.cs" />
+    <Compile Include="Assets\Scripts\8.Odin Project Validator\CreatingacustomValidationProfile.cs" />
+    <Compile Include="Assets\Scripts\8.Odin Project Validator\CreatingCustomValidators.cs" />
+    <Compile Include="Assets\Scripts\8.Odin Project Validator\CreatingCustomValidators1.cs" />
     <Compile Include="Assets\Scripts\8.Odin Project Validator\MyComponent.cs" />
     <Compile Include="Assets\Scripts\ExampleScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

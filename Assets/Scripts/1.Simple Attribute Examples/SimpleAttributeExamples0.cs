@@ -27,6 +27,8 @@ namespace D_Game.Demo
         {
             return ".cs,.unity,prefab";
         }
+
+        public string temp = "";
     }
 }
 
