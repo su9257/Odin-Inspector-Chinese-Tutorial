@@ -184,7 +184,10 @@ namespace Sirenix.OdinInspector.Editor.Drawers
                     }
                 }
 
-                EditorApplication.delayCall += GUIHelper.CurrentWindow.Close;
+                if (GUIHelper.CurrentWindow) 
+                {
+                    EditorApplication.delayCall += GUIHelper.CurrentWindow.Close;
+                }
             }
 
             [HorizontalGroup, Button(ButtonSizes.Large)]
@@ -192,7 +195,11 @@ namespace Sirenix.OdinInspector.Editor.Drawers
             {
                 EditorPrefs.SetBool(AUTO_FIX_PREFS_KEY, true);
                 autoFix = true;
-                EditorApplication.delayCall += GUIHelper.CurrentWindow.Close;
+
+                if (GUIHelper.CurrentWindow) 
+                {
+                    EditorApplication.delayCall += GUIHelper.CurrentWindow.Close;
+                }
             }
         }
     }

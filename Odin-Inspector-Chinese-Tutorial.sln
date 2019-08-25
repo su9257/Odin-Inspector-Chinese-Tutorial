@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Compa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinValidator", "Sirenix.OdinValidator.csproj", "{521699F8-ECE4-087F-E659-0B587DFC07D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{2EAAB7F6-902F-C2DE-5653-86C14BF04CAA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{37B14EED-F877-57A0-55BE-811DE035A1FE}"
 EndProject
 Global
@@ -35,10 +33,6 @@ Global
 		{521699F8-ECE4-087F-E659-0B587DFC07D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{521699F8-ECE4-087F-E659-0B587DFC07D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{521699F8-ECE4-087F-E659-0B587DFC07D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EAAB7F6-902F-C2DE-5653-86C14BF04CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EAAB7F6-902F-C2DE-5653-86C14BF04CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EAAB7F6-902F-C2DE-5653-86C14BF04CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EAAB7F6-902F-C2DE-5653-86C14BF04CAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37B14EED-F877-57A0-55BE-811DE035A1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37B14EED-F877-57A0-55BE-811DE035A1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B14EED-F877-57A0-55BE-811DE035A1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
