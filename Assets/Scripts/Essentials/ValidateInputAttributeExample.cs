@@ -1,95 +1,78 @@
 ﻿using Sirenix.OdinInspector;
+using System;
 using UnityEngine;
 
 
-
-namespace D_Game.Demo
+public class ValidateInputAttributeExample : MonoBehaviour
 {
-    public class ValidateInputAttributeExample : MonoBehaviour
+    [HideLabel]
+    [ValidateInput("MustBeNull", "这个字段应该为空。")]
+    public MyScripty DefaultMessage;
+    private bool MustBeNull(MyScripty scripty)
     {
-        [HideLabel]
-        [ValidateInput("MustBeNull", "这个字段应该为空。")]
-        public MyScripty DefaultMessage;
+        return scripty == null;
+    }
 
-        [ValidateInput("CheckGameObject", "这个物体不应该为空。")]
-        public GameObject tempObj = null;
+    [ValidateInput("CheckGameObject", "$tempMessage")]
+    public GameObject tempObj = null;
+    [ReadOnly]
+    public string tempMessage = "这个物体不应该为空！";
+    private bool CheckGameObject(GameObject tempObj)
+    {
+        return tempObj != null;
+    }
 
-        [Space(12), HideLabel]
-        [ValidateInput("HasMeshRendererDynamicMessage", "aaaaaaaaaaaaaaa")]
-        public GameObject DynamicMessage;
+    [ValidateInput("HasMeshRendererDynamicMessage", "对应的函数中已经有消息，所以这个默认消息已经没用")]
+    public GameObject DynamicMessage;
+    private bool HasMeshRendererDynamicMessage(GameObject gameObject, ref string errorMessage)
+    {
+        if (gameObject == null) return true;
 
-        [Space(12), HideLabel]
-        [Title("Dynamic message type", "The validation method can also control the type of the message")]
-        [ValidateInput("HasMeshRendererDynamicMessageAndType", "预制件必须有一个MeshRenderer组件")]
-        public GameObject DynamicMessageAndType;
-
-        [Space(8), HideLabel]
-        [InfoBox("Change GameObject value to update message type", InfoMessageType.None)]
-        public InfoMessageType MessageType;
-
-        [Space(12), HideLabel]
-        [Title("Dynamic default message", "Use $ to indicate a member string as default message")]
-        [ValidateInput("AlwaysFalse", "$Message", InfoMessageType.Warning)]
-        public string Message = "Dynamic ValidateInput message";
-
-        private bool AlwaysFalse(string value)
+        if (gameObject.GetComponentInChildren<MeshRenderer>() == null)
         {
+            errorMessage = "\"" + gameObject.name + "\" 这玩应必须有一个 MeshRenderer 组件";//如果设置消息，则默认消息会被覆盖
             return false;
         }
+        return true;
+    }
 
-        private bool MustBeNull(MyScripty scripty)
+    [ValidateInput("HasMeshRendererDynamicMessageAndType", "对应的函数中已经有消息和类型，所以这个默认消息和类型已经没用")]
+    public GameObject DynamicMessageAndType;
+
+    [InfoBox("Change GameObject value to update message type", InfoMessageType.Info)]
+    public InfoMessageType MessageType;
+    private bool HasMeshRendererDynamicMessageAndType(GameObject gameObject, ref string errorMessage, ref InfoMessageType? messageType)
+    {
+        if (gameObject == null) return true;
+
+        if (gameObject.GetComponentInChildren<MeshRenderer>() == null)
         {
-            return scripty == null;
+            errorMessage = "\"" + gameObject.name + "\" 要有一个 MeshRenderer 组件";//如果设置消息，则默认消息会被覆盖
+            messageType = this.MessageType;//如果设置消息类型，则默认消息类型会被覆盖
+            return false;
         }
+        return true;
+    }
 
-        private bool CheckGameObject(GameObject tempObj)
-        {
-            return tempObj != null;
-        }
 
-        private bool HasMeshRendererDefaultMessage(GameObject gameObject)
-        {
-            if (gameObject == null) return true;
+    [ValidateInput("AlwaysFalse", "$Message", InfoMessageType.Warning)]
+    public string Message = "Dynamic ValidateInput message";
 
-            return gameObject.GetComponentInChildren<MeshRenderer>() != null;
-        }
+    private bool AlwaysFalse(string value)
+    {
+        return false;
+    }
 
-        private bool HasMeshRendererDynamicMessage(GameObject gameObject, ref string errorMessage)
-        {
-            if (gameObject == null) return true;
+    private bool HasMeshRendererDefaultMessage(GameObject gameObject)
+    {
+        if (gameObject == null) return true;
 
-            if (gameObject.GetComponentInChildren<MeshRenderer>() == null)
-            {
-                // If errorMessage is left as null, the default error message from the attribute will be used
-                errorMessage = "\"" + gameObject.name + "\" must have a MeshRenderer component";
-                return false;
-            }
+        return gameObject.GetComponentInChildren<MeshRenderer>() != null;
+    }
 
-            return true;
-        }
 
-        private bool HasMeshRendererDynamicMessageAndType(GameObject gameObject, ref string errorMessage, ref InfoMessageType? messageType)
-        {
-            if (gameObject == null) return true;
+    public class MyScripty : ScriptableObject
+    {
 
-            if (gameObject.GetComponentInChildren<MeshRenderer>() == null)
-            {
-                // If errorMessage is left as null, the default error message from the attribute will be used
-                errorMessage = "\"" + gameObject.name + "\" should have a MeshRenderer component";
-
-                // If messageType is left as null, the default message type from the attribute will be used
-                messageType = this.MessageType;
-
-                return false;
-            }
-
-            return true;
-        }
-
-        public class MyScripty : ScriptableObject
-        {
-
-        }
     }
 }
-

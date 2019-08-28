@@ -357,6 +357,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &670179271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670179273}
+  - component: {fileID: 670179272}
+  m_Layer: 0
+  m_Name: ValueDropdownAttributeExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &670179272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670179271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abccb930f552d104b83c9ba2b0b7df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SomeSize1: 0
+  SomeSize2: 0
+  SomeSize3: 0
+  SomeMonoBehaviour: {fileID: 0}
+  FilteredEnum: 0
+  IntTreview: 010000000200000007000000
+  UniqueGameobjectList: []
+  UniqueGameobjectListMode2: []
+--- !u!4 &670179273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670179271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &760752658
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188619861}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: "\u573A\u666F\u7269\u4F53-\u83DC\u9E1F\u6D77\u6F9C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -716,10 +767,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultMessage: {fileID: 0}
-  DynamicMessage: {fileID: 1188619860}
+  tempObj: {fileID: 0}
+  tempMessage: "\u8FD9\u4E2A\u7269\u4F53\u4E0D\u5E94\u8BE5\u4E3A\u7A7A\uFF01"
+  DynamicMessage: {fileID: 0}
   DynamicMessageAndType: {fileID: 1188619860}
-  MessageType: 0
-  Message: Dynamic ValidateInput message
+  MessageType: 3
+  Message: "\u52A8\u6001\u6D88\u606F\uFF0C\u8F93\u5165\u4EC0\u4E48\u5C31\u663E\u793A\u4EC0\u4E48"
 --- !u!4 &1741749171
 Transform:
   m_ObjectHideFlags: 0
