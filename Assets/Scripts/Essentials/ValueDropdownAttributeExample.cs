@@ -40,16 +40,15 @@ public class ValueDropdownAttributeExample : MonoBehaviour
 
     [ValueDropdown("KeyCodes")]
     public KeyCode FilteredEnum;
+    private static IEnumerable<KeyCode> KeyCodes = Enumerable.Range((int)KeyCode.Alpha0, 10).Cast<KeyCode>();
+
+
 
     [ValueDropdown("TreeViewOfInts", ExpandAllMenuItems = true)]
     public List<int> IntTreview = new List<int>() { 1, 2, 7 };
-
-    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true)]
-    public List<GameObject> UniqueGameobjectList;
-
-    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true, DropdownTitle = "Select Scene Object", DrawDropdownForListElements = false, ExcludeExistingValuesInList = true)]
-    public List<GameObject> UniqueGameobjectListMode2;
-
+    /// <summary>
+    /// 以“/”符号作为类别分隔符
+    /// </summary>
     private IEnumerable TreeViewOfInts = new ValueDropdownList<int>()
 {
     { "Node 1/Node 1.1", 1 },
@@ -62,14 +61,19 @@ public class ValueDropdownAttributeExample : MonoBehaviour
 };
 
 
-    private static IEnumerable<KeyCode> KeyCodes = Enumerable.Range((int)KeyCode.Alpha0, 10).Cast<KeyCode>();
-
+    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true)]
+    public List<GameObject> UniqueGameobjectList;
     private static IEnumerable GetAllSceneObjects()
     {
         Func<Transform, string> getPath = null;
         getPath = x => (x ? getPath(x.parent) + "/" + x.gameObject.name : "");
         return GameObject.FindObjectsOfType<GameObject>().Select(x => new ValueDropdownItem(getPath(x.transform), x));
     }
+
+
+    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true, DropdownTitle = "Select Scene Object", DrawDropdownForListElements = false, ExcludeExistingValuesInList = true)]
+    public List<GameObject> UniqueGameobjectListMode2;
+
 
     private static IEnumerable GetAllScriptableObjects()
     {
