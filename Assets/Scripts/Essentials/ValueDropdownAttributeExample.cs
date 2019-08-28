@@ -60,7 +60,9 @@ public class ValueDropdownAttributeExample : MonoBehaviour
     { "Node 1/Node 3.1/Node 3.1.2", 7 },
 };
 
-
+    /// <summary>
+    /// IsUniqueList为true 每个Item上面有一个勾选框
+    /// </summary>
     [ValueDropdown("GetAllSceneObjects", IsUniqueList = true)]
     public List<GameObject> UniqueGameobjectList;
     private static IEnumerable GetAllSceneObjects()
@@ -70,8 +72,11 @@ public class ValueDropdownAttributeExample : MonoBehaviour
         return GameObject.FindObjectsOfType<GameObject>().Select(x => new ValueDropdownItem(getPath(x.transform), x));
     }
 
-
-    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true, DropdownTitle = "Select Scene Object", DrawDropdownForListElements = false, ExcludeExistingValuesInList = true)]
+    /// <summary>
+    /// ExcludeExistingValuesInList 为 ture则选中的item不在出现在等待选择的列下拉表中
+    /// DrawDropdownForListElements 为 true  每个item都有一个下拉列表
+    /// </summary>
+    [ValueDropdown("GetAllSceneObjects", IsUniqueList = false, DropdownTitle = "Select Scene Object", DrawDropdownForListElements = false, ExcludeExistingValuesInList = true)]
     public List<GameObject> UniqueGameobjectListMode2;
 
 
@@ -91,7 +96,4 @@ public class ValueDropdownAttributeExample : MonoBehaviour
             .Select(x => x.Substring(root.Length))
             .Select(x => new ValueDropdownItem(x, UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(root + x)));
     }
-
 }
-
-
