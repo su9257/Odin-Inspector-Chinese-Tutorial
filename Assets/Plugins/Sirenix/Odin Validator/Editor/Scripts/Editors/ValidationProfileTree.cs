@@ -21,6 +21,7 @@ namespace Sirenix.OdinValidator.Editor
         private Dictionary<object, OdinMenuItem> childMenuItemLookup;
         public static Color red = new Color(0.787f, 0.133f, 0.133f, 1f);
         public static Color orange = new Color(0.934f, 0.66f, 0.172f, 1f);
+        public static Color green = new Color(0, 0.5f, 0, 1f);
 
         public OdinMenuItem GetMenuItemForObject(object obj)
         {
@@ -229,13 +230,8 @@ namespace Sirenix.OdinValidator.Editor
                 }
             }
 
-            //var wStyle = new GUIStyle("sv_label_5");
-            //var eStyle = new GUIStyle("sv_label_6");
-            //wStyle.alignment = TextAnchor.MiddleCenter;
-            //eStyle.alignment = TextAnchor.MiddleCenter;
-
-            var eCountWidth = SirenixGUIStyles.LeftAlignedWhiteMiniLabel.CalcSize(new GUIContent(maxECount + " ")).x;
-            var wCountWidth = SirenixGUIStyles.LeftAlignedWhiteMiniLabel.CalcSize(new GUIContent(maxWCount + " ")).x;
+            var eCountWidth = SirenixGUIStyles.CenteredWhiteMiniLabel.CalcSize(new GUIContent(maxECount + " ")).x;
+            var wCountWidth = SirenixGUIStyles.CenteredWhiteMiniLabel.CalcSize(new GUIContent(maxWCount + " ")).x;
 
             wCountWidth = eCountWidth = Mathf.Max(eCountWidth, wCountWidth);
 
@@ -248,8 +244,10 @@ namespace Sirenix.OdinValidator.Editor
                 var wc = warningCount[mi];
                 var ecl = new GUIContent(ec + "");
                 var wcl = new GUIContent(wc + "");
+                var ncl = new GUIContent("0");
+                //var result = mi.Value as ValidationProfileResult;
 
-                mi.OnDrawItem += (m) =>
+                mi.OnDrawItem = (m) =>
                 {
                     if (Event.current.type == EventType.Repaint)
                     {
@@ -262,21 +260,30 @@ namespace Sirenix.OdinValidator.Editor
                         var hasErrors = ec > 0;
                         if (hasErrors)
                         {
+                            //red.a = result == null ? 0.2f : 1;
                             SirenixEditorGUI.DrawSolidRect(errorRect, red);
-                            //SirenixEditorGUI.DrawBorders(errorRect, 1);
                             errorRect.y -= 1;
-                            errorRect.x -= 1;
+                            errorRect.x += 1;
                             GUI.Label(errorRect, ecl, SirenixGUIStyles.CenteredWhiteMiniLabel);
                         }
 
                         var hasWarnings = wc > 0;
                         if (hasWarnings)
                         {
-                            warningRect.x -= 1;
+                            //orange.a = result == null ? 0.2f : 1;
+                            warningRect.x -= 2;
                             SirenixEditorGUI.DrawSolidRect(warningRect, orange);
-                            //SirenixEditorGUI.DrawBorders(warningRect, 1);
                             warningRect.y -= 1;
-                            GUI.Label(warningRect, wcl, SirenixGUIStyles.CenteredBlackMiniLabel);
+                            warningRect.x += 1;
+                            GUI.Label(warningRect, wcl, SirenixGUIStyles.CenteredWhiteMiniLabel);
+                        }
+
+                        if (!hasErrors && !hasWarnings)
+                        {
+                            SirenixEditorGUI.DrawSolidRect(errorRect, green);
+                            errorRect.y -= 1;
+                            errorRect.x += 1;
+                            GUI.Label(errorRect, ncl, SirenixGUIStyles.CenteredWhiteMiniLabel);
                         }
                     }
                 };

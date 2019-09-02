@@ -23,7 +23,32 @@ namespace Sirenix.OdinValidator.Editor
         public string Title;
         public List<ValidationProfileResult> ProfileResults = new List<ValidationProfileResult>();
         public event Action<ValidationProfileResult> OnProfileResultSelected;
-        public DisplayOptions Display = DisplayOptions.Message | DisplayOptions.Object | DisplayOptions.Category;
+        private DisplayOptions? _display;
+        public DisplayOptions Display
+        {
+            get
+            {
+                if (!_display.HasValue)
+                {
+                    if (EditorPrefs.HasKey("OdinValidatorDisplayColumns"))
+                    {
+                        _display = (DisplayOptions)EditorPrefs.GetInt("OdinValidatorDisplayColumns");
+                    }
+                    else
+                    {
+                        _display = DisplayOptions.Message | DisplayOptions.Object | DisplayOptions.Category;
+                        EditorPrefs.SetInt("OdinValidatorDisplayColumns", (int)_display);
+                    }
+                }
+
+                return _display.Value;
+            }
+            set
+            {
+                _display = value;
+                EditorPrefs.SetInt("OdinValidatorDisplayColumns", (int)_display);
+            }
+        }
         public OdinMenuTree Tree;
         public DisplayOptions SortBy;
         public bool SortAscending;
