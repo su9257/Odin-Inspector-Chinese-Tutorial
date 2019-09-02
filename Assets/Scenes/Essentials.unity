@@ -144,6 +144,9 @@ MonoBehaviour:
   MyObject:
     Value: 395
   Scripty: {fileID: 0}
+  tempObj: {fileID: 6438001640978389032, guid: 16e106bf0a1b7d346b7dd9668658feb4, type: 3}
+  tempObj3: {fileID: 6438001640978389032, guid: 16e106bf0a1b7d346b7dd9668658feb4,
+    type: 3}
 --- !u!4 &38017812
 Transform:
   m_ObjectHideFlags: 0

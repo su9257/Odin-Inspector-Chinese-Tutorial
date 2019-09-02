@@ -79,23 +79,25 @@
     <Compile Include="Assets\Scripts\8.Odin Project Validator\CreatingCustomValidators.cs" />
     <Compile Include="Assets\Scripts\8.Odin Project Validator\CreatingCustomValidators1.cs" />
     <Compile Include="Assets\Scripts\8.Odin Project Validator\MyComponent.cs" />
-    <Compile Include="Assets\Scripts\Essentials\AssetsOnlyExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\CustomValueDrawerExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\DelayedPropertyExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\DetailedInfoBoxExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\EnableGUIExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\GUIColorExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\HideLabelExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\PropertyOrderExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\PropertySpaceExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\ReadOnlyExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\RequiredExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\ShowInInspectorExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\TitleAttributeExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\TypeFilterExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\TypeInfoBoxExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\ValidateInputAttributeExample.cs" />
-    <Compile Include="Assets\Scripts\Essentials\ValueDropdownAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\AssetsOnlyExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\CustomValueDrawerExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\DelayedPropertyExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\DetailedInfoBoxExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\EnableGUIExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\GUIColorExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\HideLabelExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\PropertyOrderExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\PropertySpaceExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\ReadOnlyExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\RequiredExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\ShowInInspectorExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\TitleAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\TypeFilterExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\TypeInfoBoxExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\ValidateInputAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\1.Essentials\ValueDropdownAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\AssetListAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\AssetSelectorAttributeExample.cs" />
     <Compile Include="Assets\Scripts\ExampleScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -693,13 +695,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Sirenix.OdinValidator.csproj">
-      <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
-      <Name>Sirenix.OdinValidator</Name>
-    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
       <Project>{91D90497-2D76-CD2B-5FA0-01F2D9E507F7}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinValidator.csproj">
+      <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
+      <Name>Sirenix.OdinValidator</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
       <Project>{D67E8E75-D777-15CA-9820-C60DDAA7BFFE}</Project>

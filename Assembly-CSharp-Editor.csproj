@@ -707,13 +707,13 @@
       <Project>{53ACB4C1-881B-8AD0-390C-7FF11801450A}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinValidator.csproj">
-      <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
-      <Name>Sirenix.OdinValidator</Name>
-    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
       <Project>{91D90497-2D76-CD2B-5FA0-01F2D9E507F7}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinValidator.csproj">
+      <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
+      <Name>Sirenix.OdinValidator</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
       <Project>{D67E8E75-D777-15CA-9820-C60DDAA7BFFE}</Project>
