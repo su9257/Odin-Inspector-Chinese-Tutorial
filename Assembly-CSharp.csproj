@@ -98,6 +98,8 @@
     <Compile Include="Assets\Scripts\Attribute\1.Essentials\ValueDropdownAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\AssetListAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\AssetSelectorAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\ChildGameObjectsOnlyAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\ColorPaletteAttributeExample.cs" />
     <Compile Include="Assets\Scripts\ExampleScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
