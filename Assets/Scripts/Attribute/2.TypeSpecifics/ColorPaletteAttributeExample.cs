@@ -4,8 +4,6 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace D_Game.Demo
-{
     public class ColorPaletteAttributeExample : MonoBehaviour
     {
         [ColorPalette]
@@ -68,5 +66,5 @@ namespace D_Game.Demo
             public Color[] Colors;
         }
     }
-}
+
 

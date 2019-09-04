@@ -100,6 +100,15 @@
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\AssetSelectorAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\ChildGameObjectsOnlyAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\ColorPaletteAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\DisplayAsStringAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\EnumPagingAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\EnumToggleButtonsAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\FilePathAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\FolderPathAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideInInlineEditorsAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideInTablesAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideMonoScriptAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideReferenceObjectPickerAttributeExample.cs" />
     <Compile Include="Assets\Scripts\ExampleScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

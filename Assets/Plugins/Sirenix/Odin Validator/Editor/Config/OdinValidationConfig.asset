@@ -308,9 +308,9 @@ MonoBehaviour:
   Profile:
     name: Scan All Scenes
     description: Scans all scenes in the project
-    IncludeScenesFromBuildOptions: 1
-    IncludeOpenScenes: 1
-    IncludeAssetDependencies: 1
+    IncludeScenesFromBuildOptions: 0
+    IncludeOpenScenes: 0
+    IncludeAssetDependencies: 0
     ScenePaths:
     - Assets
     ExcludeScenePaths: []
