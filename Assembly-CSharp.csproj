@@ -109,6 +109,11 @@
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideInTablesAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideMonoScriptAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\HideReferenceObjectPickerAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\InlineEditorAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\MultiLinePropertyAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\PreviewFieldAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\SceneObjectsOnlyAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Attribute\2.TypeSpecifics\TableListAttributeExample.cs" />
     <Compile Include="Assets\Scripts\ExampleScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
