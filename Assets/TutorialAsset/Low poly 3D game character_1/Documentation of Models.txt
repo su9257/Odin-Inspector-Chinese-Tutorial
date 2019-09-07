@@ -1,0 +1,28 @@
+3D Game Character low polygon for mobile games. 
+14 Animations 2 Deferent Texture included with this Unity Package.
+Great Low Poly 3D Running game Character ready to use in your Project. Ready for Virtual Reality (VR), Augmented Reality (AR), Games and other real-time pass games & apps. 
+3D Game Character low-polygon mesh for mobiles, AR, VR and Learning Apps. 
+Package has been submitted using Unity 5.0.0
+
+Textures Details:- 
+1024x1024 –  .PNG and .TGA ---- Head texture
+1024x1024 -  .PNG and .TGA ----- Body texture
+
+Format Type:- 
+FBX (Ready to use for UNITY 3D Game)
+
+Animation:-
+1.	T POSE
+2.	Walking
+3.	Walking Cartoon
+4.	Zombie Walking
+5.	Jump_1
+6.	Jump_2
+7.	Jump_3
+8.	Roll to run
+9.	Dying
+10.	Slide
+11.	Forward Flip
+12.	Running crawl
+13.	Running
+14.	Fast Running

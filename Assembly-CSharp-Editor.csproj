@@ -60,8 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\7.How To Make An OdinEditorWindow\Editor\HowToMakeAnOdinEditorWindow.cs" />
-    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\7.How To Make An OdinEditorWindow\Editor\TestWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\1.QuickStart\7.How To Make An OdinEditorWindow\Editor\HowToMakeAnOdinEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\1.QuickStart\7.How To Make An OdinEditorWindow\Editor\TestWindow.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Unity_Project/Odin-Inspector-Chinese-Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

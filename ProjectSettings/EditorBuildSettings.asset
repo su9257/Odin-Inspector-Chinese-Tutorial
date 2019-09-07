@@ -6,21 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1.QuickStart/1.Simple Attribute Examples.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/1.Simple
+      Attribute Examples.unity
     guid: 521314757bb2d3e4f934d60b08db78c6
   - enabled: 1
-    path: Assets/Scenes/1.QuickStart/2.Group Attributes.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/2.Group
+      Attributes.unity
     guid: a1990161264bef640b26a630fc18df4f
   - enabled: 1
-    path: Assets/Scenes/1.QuickStart/3.Meta Attributes.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/3.Meta
+      Attributes.unity
     guid: 6fd8e6e81dd77294ea6d03057cec6efd
   - enabled: 1
-    path: Assets/Scenes/1.QuickStart/5.Changing The Order Of Properties.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/5.Changing
+      The Order Of Properties.unity
     guid: 9f7b1252c48c63343a692555cb387fc6
   - enabled: 1
-    path: Assets/Scenes/1.QuickStart/6.Attribute Expressions.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/6.Attribute
+      Expressions.unity
     guid: 578dec6b64846c64f9e9af2c74bc3964
   - enabled: 1
-    path: Assets/Scenes/1.QuickStart/7.How To Make An OdinEditorWindow.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/7.How To
+      Make An OdinEditorWindow.unity
     guid: 97f3b446bc78cef42a17e68bb1ba93c3
   m_configObjects: {}
