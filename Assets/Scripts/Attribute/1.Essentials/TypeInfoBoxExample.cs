@@ -59,6 +59,12 @@ public static class ExampleHelper
 
         string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath(path + "/New " + typeof(T).ToString() + ".asset");
         Debug.Log($"assetPathAndName：{assetPathAndName}");
+        AssetDatabase.CreateAsset(asset, assetPathAndName);
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        EditorUtility.FocusProjectWindow();
+        //Selection.activeObject = asset;
         return asset;
     }
 

@@ -18,6 +18,7 @@ namespace Sirenix.OdinValidator.Editor
     public class ValidationProfileEditorDrawer : OdinValueDrawer<ValidationProfileEditor>
     {
         private LocalPersistentContext<float> menuTreeWidth;
+        private LocalPersistentContext<float> overviewHeight;
         private List<ResizableColumn> columns;
         private Vector2 scrollPos;
         private ValidationRunner runner;
@@ -27,11 +28,11 @@ namespace Sirenix.OdinValidator.Editor
         private ValidationProfileTree validationProfileTree;
         private ValidationOverview overview;
         private LocalPersistentContext<bool> overviewToggle;
-        private float overviewHeight = 300;
 
         protected override void Initialize()
         {
-            this.menuTreeWidth = this.GetPersistentValue<float>("menuTreeWidth", 380);
+            this.menuTreeWidth = this.GetPersistentValue<float>("menuTreeWidth", 320);
+            this.overviewHeight = this.GetPersistentValue<float>("overviewHeight", 300);
             this.columns = new List<ResizableColumn>() { ResizableColumn.FlexibleColumn(this.menuTreeWidth.Value, 80), ResizableColumn.DynamicColumn(0, 200) };
             this.runner = new ValidationRunner();
             this.overview = new ValidationOverview();
@@ -106,8 +107,8 @@ namespace Sirenix.OdinValidator.Editor
 
                 if (this.overviewToggle.Value)
                 {
-                    this.overviewHeight -= SirenixEditorGUI.SlideRect(overviewSlideRect.SetXMax(toggleOverviewBtnRect.xMin), MouseCursor.SplitResizeUpDown).y;
-                    this.overviewHeight -= SirenixEditorGUI.SlideRect(overviewSlideRect.SetXMin(toggleOverviewBtnRect.xMax), MouseCursor.SplitResizeUpDown).y;
+                    this.overviewHeight.Value -= SirenixEditorGUI.SlideRect(overviewSlideRect.SetXMax(toggleOverviewBtnRect.xMin), MouseCursor.SplitResizeUpDown).y;
+                    this.overviewHeight.Value -= SirenixEditorGUI.SlideRect(overviewSlideRect.SetXMin(toggleOverviewBtnRect.xMax), MouseCursor.SplitResizeUpDown).y;
                 }
 
                 // Left menu tree
@@ -142,7 +143,7 @@ namespace Sirenix.OdinValidator.Editor
             // Overview
             if (this.overviewToggle.Value)
             {
-                GUILayout.BeginVertical(GUILayout.Height(this.overviewHeight));
+                GUILayout.BeginVertical(GUILayout.Height(this.overviewHeight.Value));
                 {
                     this.overview.DrawOverview();
                 }
@@ -150,9 +151,13 @@ namespace Sirenix.OdinValidator.Editor
 
                 if (Event.current.type == EventType.Repaint)
                 {
-                    this.overviewHeight = Mathf.Max(50, this.overviewHeight);
-                    var height = GUIHelper.CurrentWindow.position.height - overviewSlideRect.yMax;
-                    this.overviewHeight = Mathf.Min(this.overviewHeight, height);
+                    this.overviewHeight.Value = Mathf.Max(50f, this.overviewHeight.Value);
+                    var wnd = GUIHelper.CurrentWindow;
+                    if (wnd)
+                    {
+                        var height = wnd.position.height - overviewSlideRect.yMax;
+                        this.overviewHeight.Value = Mathf.Min(this.overviewHeight.Value, height);
+                    }
                 }
             }
         }

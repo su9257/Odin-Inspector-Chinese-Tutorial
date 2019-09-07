@@ -2210,6 +2210,7 @@
         <member name="P:Sirenix.Utilities.Editor.GUIHelper.ContextWidth">
             <summary>
             Gets the current editor gui context width. Only set these if you know what it does.
+            Setting this has been removed. Use PushContextWidth and PopContextWidth instead.
             </summary>
         </member>
         <member name="P:Sirenix.Utilities.Editor.GUIHelper.BetterLabelWidth">
@@ -2316,6 +2317,18 @@
             Gets the playmode color tint.
             </summary>
             <returns>The playmode color tint.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushContextWidth(System.Single)">
+            <summary>
+            Pushes a context width to the context width stack.
+            Remember to pop the value again with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopContextWidth"/>.
+            </summary>
+            <param name="width">The width to push.</param>
+        </member>
+        <member name="M:Sirenix.Utilities.Editor.GUIHelper.PopContextWidth">
+            <summary>
+            Pops a value pushed by <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PushContextWidth(System.Single)"/>.
+            </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushColor(UnityEngine.Color,System.Boolean)">
             <summary>
@@ -7157,11 +7170,12 @@
             Gets all assets of the specified type.
             </summary>
         </member>
-        <member name="M:Sirenix.Utilities.Editor.AssetUtilities.GetAllAssetsOfType(System.Type)">
+        <member name="M:Sirenix.Utilities.Editor.AssetUtilities.GetAllAssetsOfType(System.Type,System.String)">
             <summary>
             Gets all assets of the specified type.
             </summary>
             <param name="type">The type of assets to find.</param>
+            <param name="folderPath">The asset folder path.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.AssetUtilities.GetAllAssetsOfTypeWithProgress(System.Type,System.String)">
             <summary>

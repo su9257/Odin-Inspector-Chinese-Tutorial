@@ -1,31 +1,20 @@
------------------------------------- Getting Started ------------------------------------
+-----------------------------------------------------------------------------------------
 
-TODO
+Thank you for using Odin Validator.
 
-------------------------------------- Helpful Links -------------------------------------
+If there is anything we can help you with, or if you have any feedback, please don't hesitate to reach out!
 
-Manual:             https://....
-Roadmap:            https://sirenix.net/odininspector/roadmap
-Issue Tracker:      https://bitbucket.org/sirenix/odin-inspector
+-----------------------------------------------------------------------------------------
 
---------------------------------- Community and Support ---------------------------------
-
-If you have any issues, suggestions or want advice, then you're more than welcome 
-to join us on Discord, or reach out to us by any other means.
-
-Support:            https://sirenix.net/support
-Community Addons:   https://devdog.io/unity-assets/odin-inspector-and-serializer/community-bonus/
+Getting Started:    https://odininspector.com/tutorials/odin-project-validator/getting-started-with-odin-project-validator
+Support:            https://odininspector.com/support
 Discord:            https://discord.gg/AgDmStu
 
+-----------------------------------------------------------------------------------------
 
----------------------------------------Thanks you!---------------------------------------
-
-We really hope you like using Odin. Be sure to leave a review on the Asset Store,
-that helps us out a lot!
-
-Leave a review:     https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041
-
-Odin Inspector is published by Devdog and developed by Sirenix.
+Odin Validator is published by Devdog and developed by Sirenix.
 
 Devdog:             https://devdog.io
 Sirenix:            Https://sirenix.net
+
+-----------------------------------------------------------------------------------------
