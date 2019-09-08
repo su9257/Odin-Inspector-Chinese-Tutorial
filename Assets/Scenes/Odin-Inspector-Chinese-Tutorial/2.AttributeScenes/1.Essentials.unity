@@ -965,13 +965,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2513cb2ec33850044ac38a4f525511f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultMessage: {fileID: 0}
-  tempObj: {fileID: 0}
-  tempMessage: "\u8FD9\u4E2A\u7269\u4F53\u4E0D\u5E94\u8BE5\u4E3A\u7A7A\uFF01"
+  DefaultMessage: {fileID: 11400000, guid: b2068a06640200844884f151406a9039, type: 2}
+  dynamicMessage: "\u8FD9\u4E2A\u7269\u4F53\u4E0D\u5E94\u8BE5\u4E3A\u7A7A\uFF01"
+  targetObj_None: {fileID: 0}
+  targetObj_Info: {fileID: 0}
+  targetObj_Warning: {fileID: 0}
+  targetObj_Error: {fileID: 0}
+  Message: 
   DynamicMessage: {fileID: 0}
-  DynamicMessageAndType: {fileID: 1188619860}
+  DynamicMessageAndType: {fileID: 465354078}
   MessageType: 3
-  Message: "\u52A8\u6001\u6D88\u606F\uFF0C\u8F93\u5165\u4EC0\u4E48\u5C31\u663E\u793A\u4EC0\u4E48"
 --- !u!4 &1741749171
 Transform:
   m_ObjectHideFlags: 0

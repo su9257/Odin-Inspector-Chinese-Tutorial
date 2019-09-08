@@ -1,11 +1,10 @@
 ﻿using Sirenix.OdinInspector;
-using System;
 using UnityEngine;
 
 
 public class ValidateInputAttributeExample : MonoBehaviour
 {
-    [HideLabel]
+
     [ValidateInput("MustBeNull", "这个字段应该为空。")]
     public MyScripty DefaultMessage;
     private bool MustBeNull(MyScripty scripty)
@@ -13,13 +12,28 @@ public class ValidateInputAttributeExample : MonoBehaviour
         return scripty == null;
     }
 
-    [ValidateInput("CheckGameObject", "$tempMessage",InfoMessageType.Warning)]
-    public GameObject tempObj = null;
     [ReadOnly]
-    public string tempMessage = "这个物体不应该为空！";
+    public string dynamicMessage = "这个物体不应该为空！";
+    [ValidateInput("CheckGameObject", "$dynamicMessage", InfoMessageType.None)]
+    public GameObject targetObj_None = null;
+    [ValidateInput("CheckGameObject", "$dynamicMessage", InfoMessageType.Info)]
+    public GameObject targetObj_Info = null;
+    [ValidateInput("CheckGameObject", "$dynamicMessage", InfoMessageType.Warning)]
+    public GameObject targetObj_Warning = null;
+    [ValidateInput("CheckGameObject", "$dynamicMessage", InfoMessageType.Error)]
+    public GameObject targetObj_Error = null;
+
     private bool CheckGameObject(GameObject tempObj)
     {
         return tempObj != null;
+    }
+
+    [ValidateInput("IfNullIsFalse", "$Message", InfoMessageType.Warning)]
+    public string Message = "Dynamic ValidateInput message";
+
+    private bool IfNullIsFalse(string value)
+    {
+        return string.IsNullOrEmpty(value);
     }
 
     [ValidateInput("HasMeshRendererDynamicMessage", "对应的函数中已经有消息，所以这个默认消息已经没用")]
@@ -55,19 +69,9 @@ public class ValidateInputAttributeExample : MonoBehaviour
     }
 
 
-    [ValidateInput("AlwaysFalse", "$Message", InfoMessageType.Warning)]
-    public string Message = "Dynamic ValidateInput message";
-
-    private bool AlwaysFalse(string value)
-    {
-        return false;
-    }
-
     private bool HasMeshRendererDefaultMessage(GameObject gameObject)
     {
         if (gameObject == null) return true;
-
         return gameObject.GetComponentInChildren<MeshRenderer>() != null;
     }
-
 }
