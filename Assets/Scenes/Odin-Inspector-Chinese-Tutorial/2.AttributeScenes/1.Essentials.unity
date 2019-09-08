@@ -496,38 +496,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abccb930f552d104b83c9ba2b0b7df75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SomeSize1: 1024
-  SomeSize2: 256
-  SomeSize3: 1024
-  SomeMonoBehaviour: {fileID: 0}
+  SomeSize1: 0
+  SomeSize2: 0
+  SomeSize3: 0
+  SomeSize4: 0
+  SomeSize5: 0
+  SomeSize6: 0
+  SomeSize7: 0
+  SomeSize8: 0
+  SomeSize9: 0
+  SomeSize10: 7
+  array: 0004000000010000
+  SomeMonoBehaviour: {fileID: 1518431363}
   FilteredEnum: 0
-  IntTreview: 06000000060000000700000004000000
+  IntTreeview: 010000000200000007000000
   UniqueGameobjectList:
-  - {fileID: 1188619860}
-  - {fileID: 532579005}
-  - {fileID: 592591060}
-  - {fileID: 1690503608}
-  - {fileID: 38017810}
-  - {fileID: 613507533}
-  - {fileID: 616996141}
-  - {fileID: 760752658}
-  - {fileID: 1149373724}
-  - {fileID: 1417994300}
-  - {fileID: 1587852111}
-  - {fileID: 1675538176}
-  - {fileID: 1741749169}
-  - {fileID: 0}
-  - {fileID: 1820568657}
-  - {fileID: 1925638336}
-  - {fileID: 1969148810}
-  - {fileID: 1995855937}
-  - {fileID: 2107192365}
-  - {fileID: 2107528099}
-  UniqueGameobjectListMode2:
-  - {fileID: 592591060}
-  - {fileID: 1690503608}
-  - {fileID: 44462334}
-  - {fileID: 613507533}
+  - {fileID: 439298785}
+  UniqueGameobjectListMode2: []
 --- !u!4 &670179273
 Transform:
   m_ObjectHideFlags: 0
@@ -971,9 +956,9 @@ MonoBehaviour:
   targetObj_Info: {fileID: 0}
   targetObj_Warning: {fileID: 0}
   targetObj_Error: {fileID: 0}
-  Message: 
-  DynamicMessage: {fileID: 0}
-  DynamicMessageAndType: {fileID: 465354078}
+  Message: 123123
+  DynamicMessage: {fileID: 1741749169}
+  DynamicMessageAndType: {fileID: 670179271}
   MessageType: 3
 --- !u!4 &1741749171
 Transform:
