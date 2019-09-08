@@ -1,6 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HideLabelExample : MonoBehaviour
@@ -15,5 +13,4 @@ public class HideLabelExample : MonoBehaviour
 
     [HideLabel][ShowInInspector]
     public string HidePropertyLabel { get; set; }
-
 }

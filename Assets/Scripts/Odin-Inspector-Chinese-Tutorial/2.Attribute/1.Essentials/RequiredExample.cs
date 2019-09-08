@@ -1,6 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RequiredExample : MonoBehaviour
@@ -11,9 +9,24 @@ public class RequiredExample : MonoBehaviour
     [Required("自定义错误消息.")]
     public Rigidbody MyRigidbody;
 
-    [InfoBox("使用$将成员字符串表示为消息.")]
-    [Required("$DynamicMessage")]
-    public GameObject GameObject;
 
-    public string DynamicMessage = "Dynamic error message";
+    public string DynamicMessage = "Dynamic Message";
+    [Required("$DynamicMessage")]
+    public GameObject GameObject_DynamicMessage;
+
+    [Required("$ReturnStringFunction")]
+    public GameObject GameObject_DynamicMessage1;
+    public string ReturnStringFunction()
+    {
+        return "菜鸟海澜";
+    }
+
+    [Required("$DynamicMessage", InfoMessageType.None)]
+    public GameObject GameObject_None;
+    [Required("$DynamicMessage", InfoMessageType.Info)]
+    public GameObject GameObject_Info;
+    [Required("$DynamicMessage", InfoMessageType.Warning)]
+    public GameObject GameObject_Warning;
+    [Required("$DynamicMessage",InfoMessageType.Error)]
+    public GameObject GameObject_Error;
 }

@@ -118,6 +118,8 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\ToggleAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\ToggleLeftAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\ExampleScript.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleHelper.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\MyScripty.cs" />
     <None Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ReadMe.txt" />
     <None Include="Assets\TutorialAsset\Low poly 3D game character_1\Documentation of Models.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

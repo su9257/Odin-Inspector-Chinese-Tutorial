@@ -1,6 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TitleAttributeExample : MonoBehaviour
@@ -37,13 +35,16 @@ public class TitleAttributeExample : MonoBehaviour
     public int O;
     public int P;
 
-    [Title("$Combined", titleAlignment: TitleAlignments.Centered)]
+    [Title("$MyTitle", "$MySubtitle", titleAlignment: TitleAlignments.Left)]
     public int Q;
     public int R;
+    [Title("$MyTitle", "$MySubtitle", titleAlignment: TitleAlignments.Split)]
+    public int S;
+    public int T;
 
     [ShowInInspector]
     [Title("Title on a Property")]
-    public int S { get; set; }
+    public int U { get; set; }
 
     [Title("Title on a Method")]
     [Button]

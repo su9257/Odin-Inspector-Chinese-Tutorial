@@ -4,8 +4,6 @@ using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using System.Collections.Generic;
 
-namespace D_Game.Demo
-{
     public class SomeWindow : OdinEditorWindow
     {
         [MenuItem("My Game/My Window")]
@@ -59,5 +57,5 @@ namespace D_Game.Demo
         [Button(ButtonSizes.Medium)]
         public void Test2() { }
     }
-}
+
 

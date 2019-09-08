@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyObject:
-    Value: 395
-  Scripty: {fileID: 0}
+    Value: 0
+  Scripty: {fileID: 11400000, guid: b2068a06640200844884f151406a9039, type: 2}
 --- !u!4 &38017812
 Transform:
   m_ObjectHideFlags: 0
@@ -282,6 +282,8 @@ MonoBehaviour:
   P: 0
   Q: 0
   R: 0
+  S: 0
+  T: 0
   Expresion: 0
 --- !u!4 &465354080
 Transform:
@@ -403,9 +405,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a826547a81f0dec469ac689e8da6848f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Space: 0
-  Space1: 0
-  Space2: 0
+  unitySpace: 0
+  unitySpace1: 0
+  OdinSpace2: 0
   BeforeAndAfter: 0
   BeforeAndAfter1: 0
 --- !u!4 &613507535
@@ -1014,6 +1016,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: "\u83DC\u9E1F\u6D77\u6F9C\uFF1A\u4E0B\u9762\u662F\u8BE6\u7EC6\u4FE1\u606F\uFF0C\u8FD9\u4E2A\u6B22\u8FCE\u5927\u5BB6\u7559\u8A00\u6307\u6B63\uFF0C\u5BF9\u5E94\u7684\u5DE5\u7A0B\u5DF2\u7ECF\u4E0A\u4F20Github\uFF0C\u5730\u5740\u4E3A\uFF1Ahttps://github.com/su9257/Odin-Inspector-Chinese-Tutorial"
+  NoneMessage: "\u65E0"
+  InfoMessage: "\u65E0"
+  WarningMessage: "\u65E0"
+  ErrorMessage: "\u65E0"
+  haveVisibleIfMessage: 123
+  noVisibleIfMessage: 
 --- !u!4 &1820568659
 Transform:
   m_ObjectHideFlags: 0
@@ -1104,8 +1112,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyGameObject: {fileID: 0}
   MyRigidbody: {fileID: 0}
-  GameObject: {fileID: 0}
-  DynamicMessage: Dynamic error message
+  DynamicMessage: Dynamic Message
+  GameObject_DynamicMessage: {fileID: 0}
+  GameObject_DynamicMessage1: {fileID: 0}
+  GameObject_None: {fileID: 0}
+  GameObject_Info: {fileID: 0}
+  GameObject_Warning: {fileID: 0}
+  GameObject_Error: {fileID: 0}
 --- !u!4 &1969148812
 Transform:
   m_ObjectHideFlags: 0

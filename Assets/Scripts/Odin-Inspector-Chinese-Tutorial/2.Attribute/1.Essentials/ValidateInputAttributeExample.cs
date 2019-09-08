@@ -13,7 +13,7 @@ public class ValidateInputAttributeExample : MonoBehaviour
         return scripty == null;
     }
 
-    [ValidateInput("CheckGameObject", "$tempMessage")]
+    [ValidateInput("CheckGameObject", "$tempMessage",InfoMessageType.Warning)]
     public GameObject tempObj = null;
     [ReadOnly]
     public string tempMessage = "这个物体不应该为空！";
@@ -70,9 +70,4 @@ public class ValidateInputAttributeExample : MonoBehaviour
         return gameObject.GetComponentInChildren<MeshRenderer>() != null;
     }
 
-
-    public class MyScripty : ScriptableObject
-    {
-
-    }
 }

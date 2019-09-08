@@ -1,7 +1,6 @@
 ﻿using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -43,5 +42,4 @@ public class TypeFilterExample : MonoBehaviour
     public class B2 : B1 { public int _B2; }
     public class B3 : B2 { public int _B3; }
     public class C1<T> : BaseClass { public T C; }
-
 }

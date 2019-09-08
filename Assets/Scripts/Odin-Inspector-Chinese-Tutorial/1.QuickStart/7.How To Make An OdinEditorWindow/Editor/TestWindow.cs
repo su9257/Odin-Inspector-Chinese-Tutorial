@@ -4,8 +4,6 @@ using UnityEditor;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 
-namespace D_Game.Demo
-{
     public class TestWindow : OdinEditorWindow
     {
         [MenuItem("My Game/TestWindow")]
@@ -40,5 +38,4 @@ namespace D_Game.Demo
         [TableList]
         public List<SomeType> SomeTableData;
     }
-}
 
