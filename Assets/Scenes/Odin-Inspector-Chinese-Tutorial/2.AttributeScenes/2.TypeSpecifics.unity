@@ -827,9 +827,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbb27ae68c3b794998d3f90739c08f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SingleObject: {fileID: 0}
-  AssetList: []
-  Object: {fileID: 0}
+  SingleObject: {fileID: 2800000, guid: 2eb28eee4237901418bda57efb0e6365, type: 3}
+  Object: {fileID: 102900000, guid: aed43e7d4ead01e43bc00b681475187a, type: 3}
+  AssetList:
+  - {fileID: 11400000, guid: 08379ccefc05200459f90a1c0711a340, type: 2}
+  - {fileID: 11400000, guid: b9801b8f8d2c37d4795c1ba88c703a40, type: 2}
+  - {fileID: 11400000, guid: 81484c383be194644aba23c328f22cd6, type: 2}
+  - {fileID: 11400000, guid: 54a4bdc47d124744bb8c20c227e52ebe, type: 2}
+  - {fileID: 11400000, guid: 3f814a05778baeb478cf911b0c5be1ab, type: 2}
+  - {fileID: 11400000, guid: 4f015c80d4c076a44b662d33088a9efe, type: 2}
   AutoPopulatedWhenInspected:
   - {fileID: 7501504051930011881, guid: 36f452690498e3749b14f8c78f84f43f, type: 3}
   - {fileID: 345351844444276693, guid: a45230430a9ae1c49a4cd69fb5a97a73, type: 3}
@@ -839,13 +845,9 @@ MonoBehaviour:
   - {fileID: 418644226890626218, guid: 0d42882a6d6e73f4fb683aa9c5014c85, type: 3}
   - {fileID: 418644226890626218, guid: 79ee82c4cf93bbd449de32ea37ac9373, type: 3}
   - {fileID: 418644226890626218, guid: 570341b152af73249b8323a77f3a3a2e, type: 3}
-  PrefabsStartingWithPrefix:
-  - {fileID: 1130409879911729373, guid: ba96b2396797c164692d5865c4cd0655, type: 3}
-  - {fileID: 1130409879911729373, guid: 800847dfb18767d4e81f382b5d97c2d8, type: 3}
-  - {fileID: 1130409879911729373, guid: 60ec5090f090dd044833c8916222352c, type: 3}
+  PrefabsStartingWithPrefix: []
   GameObjectsWithTag: []
-  MyRigidbodyPrefabs:
-  - {fileID: 5653939970305552363, guid: 4a98dd3a483e36f4aa33a27a949bbcae, type: 3}
+  MyRigidbodyPrefabs: []
 --- !u!1 &1097242941
 GameObject:
   m_ObjectHideFlags: 0
