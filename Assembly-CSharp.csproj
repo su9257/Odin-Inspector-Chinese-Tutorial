@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\EnumToggleButtonsAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\FilePathAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\FolderPathAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\FoldoutGroupAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\HideInInlineEditorsAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\HideInTablesAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\HideMonoScriptAttributeExample.cs" />

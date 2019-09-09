@@ -71,10 +71,19 @@ public class ValueDropdownAttributeExample : MonoBehaviour
     [ValueDropdown("TreeViewOfInts", DoubleClickToConfirm = true)]//需要双击才能选中
     public int SomeSize9;
 
-    /*【HideChildProperties】*/
+    /*【HideChildProperties】是否隐藏此类型所含有的属性信息*/
+    [ValueDropdown("RangVector3", HideChildProperties = true)]//
+    public Vector3 vector3HideChildProperties;
     [PropertySpace(0, 40)]
-    [ValueDropdown("TreeViewOfInts", HideChildProperties = true)]//目前没搞懂怎么用
-    public int SomeSize10;
+    [ValueDropdown("RangVector3", HideChildProperties = false)]//
+    public Vector3 vector3ShowChildProperties;
+
+    public IEnumerable<Vector3>  RangVector3()
+    {
+       return Enumerable.Range(0, 10).Select(i => new Vector3(i, i, i));
+    }
+
+
     /*【AppendNextDrawer】下拉条变成一个小的选择器，代替原有的宽型下拉条*/
     [PropertySpace(0, 40)]
     [ValueDropdown("TreeViewOfInts", AppendNextDrawer = true)]//
@@ -124,7 +133,7 @@ public class ValueDropdownAttributeExample : MonoBehaviour
     public List<GameObject> UniqueGameobjectList7;
 
 
-    [ValueDropdown("GetListOfMonoBehaviours", AppendNextDrawer = true, HideChildProperties = true)]
+    [ValueDropdown("GetListOfMonoBehaviours", AppendNextDrawer = true, HideChildProperties = false)]
     public MonoBehaviour SomeMonoBehaviour;
     private IEnumerable<MonoBehaviour> GetListOfMonoBehaviours()
     {

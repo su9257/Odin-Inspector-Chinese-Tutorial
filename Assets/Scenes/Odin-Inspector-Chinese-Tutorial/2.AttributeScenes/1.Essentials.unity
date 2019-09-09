@@ -505,7 +505,8 @@ MonoBehaviour:
   SomeSize7: 64
   SomeSize8: 5
   SomeSize9: 4
-  SomeSize10: 7
+  vector3HideChildProperties: {x: 0, y: 0, z: 0}
+  vector3ShowChildProperties: {x: 0, y: 0, z: 0}
   SomeSize11: 2
   SomeSize12: 7
   SomeSize13: -4
@@ -542,7 +543,7 @@ MonoBehaviour:
   - {fileID: 38017810}
   UniqueGameobjectList6: []
   UniqueGameobjectList7: []
-  SomeMonoBehaviour: {fileID: 1518431363}
+  SomeMonoBehaviour: {fileID: 1969148811}
   FilteredEnum: 51
   IntTreeview: 07000000070000000600000006000000
   UniqueGameobjectList:

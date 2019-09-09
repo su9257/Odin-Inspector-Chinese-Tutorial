@@ -12,7 +12,7 @@ public class AssetListAttributeExample : MonoBehaviour
     [AssetList(Path = "/Plugins/Sirenix/")]
     public List<ScriptableObject> AssetList;
 
-    [FoldoutGroup("过滤后的AssetLists", expanded: false)]
+    [FoldoutGroup("过滤后的AssetLists",Expanded = true)]
     [AssetList(Path = "Plugins/Sirenix/")]
     public UnityEngine.Object Object;
 
