@@ -6,8 +6,6 @@ using System.Linq;
 using UnityEngine;
 
 
-
-
 public class ValueDropdownAttributeExample : MonoBehaviour
 {
 
@@ -47,65 +45,84 @@ public class ValueDropdownAttributeExample : MonoBehaviour
       { "Large", 1024 },
       { "A", 128 },
     };
+
+    /*【DropdownTitle】给下来条提供一个标题*/
     [PropertySpace(0, 40)]
     [ValueDropdown("TextureSizes", DropdownTitle = "下拉条标题")]
     public int SomeSize5;
 
+    /*【DropdownHeight】下拉条高度*/
     [PropertySpace(0, 40)]
     [ValueDropdown("TextureSizes", DropdownHeight = 80)]
     public int SomeSize6;
 
+    /*【DropdownWidth】下拉条的宽度*/
     [PropertySpace(0, 40)]
     [ValueDropdown("TextureSizes", DropdownWidth = 100)]
     public int SomeSize7;
 
+    /*【FlattenTreeView】是否使用平铺的树形视图*/
     [PropertySpace(0, 40)]
     [ValueDropdown("TreeViewOfInts", FlattenTreeView = true)]//默认为false，如果设置为true则禁用树形结构使用平铺模式
     public int SomeSize8;
 
-
+    /*【DoubleClickToConfirm】需要双击才能确地选中的内容*/
     [PropertySpace(0, 40)]
     [ValueDropdown("TreeViewOfInts", DoubleClickToConfirm = true)]//需要双击才能选中
     public int SomeSize9;
 
+    /*【HideChildProperties】*/
     [PropertySpace(0, 40)]
-    [ValueDropdown("TreeViewOfInts", HideChildProperties = true, DisableGUIInAppendedDrawer = true)]//
+    [ValueDropdown("TreeViewOfInts", HideChildProperties = true)]//目前没搞懂怎么用
     public int SomeSize10;
+    /*【AppendNextDrawer】下拉条变成一个小的选择器，代替原有的宽型下拉条*/
+    [PropertySpace(0, 40)]
+    [ValueDropdown("TreeViewOfInts", AppendNextDrawer = true)]//
+    public int SomeSize11;
 
+    /*【DisableGUIInAppendedDrawer】配合AppendNextDrawer使用，显示的数值为灰度状态，达到不可更改数值的目的*/
+    [PropertySpace(0, 40)]
+    [ValueDropdown("TreeViewOfInts", AppendNextDrawer = true, DisableGUIInAppendedDrawer = true)]//
+    public int SomeSize12;
 
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
-    /*【MemberName】*/
+    /*【ExpandAllMenuItems】下拉条里面的条目是否全部展开*/
+    [ValueDropdown("TreeViewOfInts" , ExpandAllMenuItems = false)]//
+    public int SomeSize13;
+    [PropertySpace(0, 40)]
+    [ValueDropdown("TreeViewOfInts", ExpandAllMenuItems =true )]//
+    public int SomeSize14;
 
-    /// <summary>
-    /// AppendNextDrawer 为 true 会绘制一个下拉的按钮，非传统的宽度下拉条
-    /// </summary>
-    [ValueDropdown("FriendlyTextureSizes", AppendNextDrawer = true)]
-    public static int SomeSize30;
-    [ValueDropdown("FriendlyTextureSizes", AppendNextDrawer = true, HideChildProperties = true)]
-    public List<int> array = new List<int>()
-    {
-        SomeSize30,SomeSize40
-    };
+    /*【IsUniqueList】在添加的列表Item前面添加勾选框，可以一次性勾选多个Item并添加*/
+    [ValueDropdown("GetAllSceneObjects", IsUniqueList = false)]
+    public List<GameObject> UniqueGameobjectList0;
+    [PropertySpace(0, 40)]
+    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true)]
+    public List<GameObject> UniqueGameobjectList1;
 
-    /// <summary>
-    /// DisableGUIInAppendedDrawer是否可以更改对应栏目的数值
-    /// </summary>
-    [ValueDropdown("FriendlyTextureSizes", AppendNextDrawer = true, DisableGUIInAppendedDrawer = true)]
-    public static int SomeSize40;
+    /*【ExcludeExistingValuesInList】添加列中不会显示已经选中的Item*/
+    [ValueDropdown("GetAllSceneObjects")]
+    public List<GameObject> UniqueGameobjectList2;
+    [PropertySpace(0, 40)]
+    [ValueDropdown("GetAllSceneObjects", ExcludeExistingValuesInList = true)]
+    public List<GameObject> UniqueGameobjectList3;
+
+    /*【DisableListAddButtonBehaviour】禁用下拉列表，以弹窗的形式弹出*/
+    [PropertySpace(0, 40)]
+    [ValueDropdown("GetAllSceneObjects", DisableListAddButtonBehaviour = true, IsUniqueList = true)]
+    public List<GameObject> UniqueGameobjectList4;
+
+    /*【DrawDropdownForListElements】已经添加的Item不会再出现Item下拉表*/
+    [PropertySpace(0, 40)]
+    [ValueDropdown("GetAllSceneObjects", DrawDropdownForListElements = false)]
+    public List<GameObject> UniqueGameobjectList5;
+
+    /*【NumberOfItemsBeforeEnablingSearch】查过指定数量的Item则出现搜索框。默认是10。*/
+    [ValueDropdown("GetAllSceneObjects", NumberOfItemsBeforeEnablingSearch =200)]
+    public List<GameObject> UniqueGameobjectList6;
+    [PropertySpace(0, 40)]
+    [ValueDropdown("GetAllSceneObjects", NumberOfItemsBeforeEnablingSearch = 20)]
+    public List<GameObject> UniqueGameobjectList7;
+
 
     [ValueDropdown("GetListOfMonoBehaviours", AppendNextDrawer = true, HideChildProperties = true)]
     public MonoBehaviour SomeMonoBehaviour;
@@ -136,36 +153,13 @@ public class ValueDropdownAttributeExample : MonoBehaviour
     { "Node 1", -1 },
     { "Node 2", -2 },
     { "Node 3", -3 },
-        { "Node 4", -1 },
-    { "Node 5", -2 },
-    { "Node 6", -3 },
-        { "Node 7", -1 },
-    { "Node 8", -2 },
-    { "Node 9", -3 },
-        { "Node 10", -1 },
-    { "Node 11", -2 },
-        { "Node 12", -1 },
-    { "Node 13", -2 },
-    { "Node 14", -3 },
-        { "Node 15", -1 },
-    { "Node 16", -2 },
-        { "Node 17", -1 },
-    { "Node 18", -2 },
-    { "Node 19", -3 },
-        { "Node 20", -1 },
-    { "Node 21", -2 },
-    { "Node 22", -3 },
-        { "Node 23", -1 },
-    { "Node 24", -2 },
-    { "Node 25", -3 },
-    { "Node 26", -3 },
-    { "Node 27", -3 },
+    { "Node 4", -4 },
 };
 
     /// <summary>
     /// IsUniqueList为true 每个Item上面有一个勾选框
     /// </summary>
-    [ValueDropdown("GetAllSceneObjects", IsUniqueList = false, HideChildProperties = false)]
+    [ValueDropdown("GetAllSceneObjects", IsUniqueList = true, HideChildProperties = false)]
     public List<GameObject> UniqueGameobjectList;
     private static IEnumerable GetAllSceneObjects()
     {
