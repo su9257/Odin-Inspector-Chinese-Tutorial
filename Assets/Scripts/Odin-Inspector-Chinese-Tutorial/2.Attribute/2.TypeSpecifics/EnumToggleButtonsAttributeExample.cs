@@ -40,5 +40,3 @@ using UnityEngine;
             Debug.Log(DefaultEnumBitmask);
         }
     }
-
-

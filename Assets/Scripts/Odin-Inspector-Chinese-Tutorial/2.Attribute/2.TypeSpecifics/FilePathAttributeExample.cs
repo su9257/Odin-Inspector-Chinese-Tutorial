@@ -5,7 +5,7 @@ using UnityEngine;
 public class FilePathAttributeExample : MonoBehaviour
 {
     // 默认情况下，FolderPath提供了一个相对于Unity项目的路径。
-    [FilePath]
+    [FilePath(AbsolutePath = false)]
     public string UnityProjectPath;
 
     // 可以提供自定义父路径。父路径可以是相对于Unity项目的，也可以是绝对的。
@@ -17,23 +17,23 @@ public class FilePathAttributeExample : MonoBehaviour
     public string ResourcePath;
 
     // 提供一个逗号分隔的允许扩展列表。点（.）是可选的。
-    [FilePath(Extensions = "cs")]
+    [FilePath(Extensions = "cs, lua")]
     [BoxGroup("Conditions")]
     public string ScriptFiles;
 
-    // By setting AbsolutePath to true, the FilePath will provide an absolute path instead.
+    // 通过将AbsolutePath设置为true，文件路径将提供一个绝对路径。
     [FilePath(AbsolutePath = true)]
     public string AbsolutePath;
 
-    // FilePath can also be configured to show an error, if the provided path is invalid.
+    // 如果提供的路径无效，还可以将FilePath配置为显示错误。
     [FilePath(RequireExistingPath = true)]
     public string ExistingPath;
 
-    // By default, FilePath will enforce the use of forward slashes. It can also be configured to use backslashes instead.
+    // 默认情况下，FilePath将强制使用前斜杠。还可以将其配置为使用反斜杠
     [FilePath(UseBackslashes = true)]
     public string Backslashes;
 
-    // FilePath also supports member references with the $ symbol.
+    // FilePath还支持使用$符号的成员引用。
     [FilePath(ParentFolder = "$DynamicParent", Extensions = "$DynamicExtensions")]
     [BoxGroup("Member referencing")]
     public string DynamicFilePath;
@@ -44,7 +44,7 @@ public class FilePathAttributeExample : MonoBehaviour
     [BoxGroup("Member referencing")]
     public string DynamicExtensions = "cs, unity, jpg";
 
-    // FilePath also supports lists and arrays.
+    // FilePath还支持列表和数组。
     [FilePath(ParentFolder = "Assets/Plugins/Sirenix/Demos/Odin Inspector")]
     [BoxGroup("Lists")]
     public string[] ListOfFiles;

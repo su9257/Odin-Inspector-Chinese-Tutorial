@@ -141,14 +141,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c746ba97d3d07164e83f5ea354ff76d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColorOptions: {r: 0, g: 0, b: 0, a: 0}
-  UnderwaterColor: {r: 0, g: 0, b: 0, a: 0}
-  MyColor: {r: 0, g: 0, b: 0, a: 0}
+  ColorOptions: {r: 0.735849, g: 0.6738568, b: 0.2742079, a: 1}
+  UnderwaterColor: {r: 0.067, g: 0.271, b: 0.353, a: 1}
+  MyColor: {r: 0.89, g: 0.353, b: 0.086, a: 1}
+  MyColor_Apha: {r: 0.165, g: 0.157, b: 0.008, a: 1}
+  DynamicPaletteColor1: {r: 0.055224285, g: 0.31385195, b: 0.6886792, a: 1}
   DynamicPaletteName: "\u83DC\u9E1F\u6D77\u6F9C\u8C03\u8272\u677F"
-  DynamicPaletteColor: {r: 0.021137413, g: 0.8962264, b: 0.6418763, a: 1}
+  DynamicPaletteColor2Index: 1
+  DynamicPaletteColor2: {r: 0.8215008, g: 0, b: 1, a: 1}
   WideColorPalette: {r: 0, g: 0, b: 0, a: 0}
   ColorArray:
-  - {r: 0.431, g: 0.549, b: 0.102, a: 1}
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0, g: 0, b: 0, a: 0}
@@ -272,6 +274,40 @@ MonoBehaviour:
     - {r: 0.9245283, g: 0.1701276, b: 0, a: 1}
     - {r: 0.055224285, g: 0.31385195, b: 0.6886792, a: 1}
     - {r: 0.021137413, g: 0.8962264, b: 0.6418763, a: 1}
+  - Name: "\u6D77\u6F9C\u8C03\u8272\u677F1"
+    Colors:
+    - {r: 0.82, g: 0.722, b: 0.318, a: 1}
+    - {r: 0.537, g: 0.192, b: 0.153, a: 1}
+    - {r: 0.996, g: 0.812, b: 0.012, a: 1}
+    - {r: 1, g: 0.431, b: 0.02, a: 1}
+    - {r: 0.937, g: 0.267, b: 0.094, a: 1}
+    - {r: 0.42, g: 0.212, b: 0.18, a: 1}
+    - {r: 0.992, g: 0.651, b: 0.004, a: 1}
+    - {r: 0.89, g: 0.353, b: 0.086, a: 1}
+    - {r: 1, g: 0.443, b: 0.004, a: 1}
+    - {r: 0.682, g: 0.275, b: 0.137, a: 1}
+    - {r: 0.306, g: 0.231, b: 0.114, a: 1}
+    - {r: 0.384, g: 0.416, b: 0.082, a: 1}
+    - {r: 0.165, g: 0.157, b: 0.008, a: 1}
+    - {r: 0.906, g: 0.635, b: 0.227, a: 1}
+    - {r: 0.82, g: 0.722, b: 0.318, a: 1}
+    - {r: 0.745, g: 0.435, b: 0.031, a: 1}
+    - {r: 0.765, g: 0.682, b: 0.569, a: 1}
+    - {r: 0.18, g: 0.149, b: 0.075, a: 1}
+    - {r: 0.702, g: 0.451, b: 0.059, a: 1}
+  - Name: "\u6D77\u6F9C\u8C03\u8272\u677F2"
+    Colors:
+    - {r: 0.1768868, g: 0.7075472, b: 0.31143576, a: 1}
+    - {r: 0.9951428, g: 1, b: 0, a: 1}
+    - {r: 0.8113208, g: 0.5374311, b: 0.03444285, a: 1}
+    - {r: 1, g: 0.38102233, b: 0, a: 1}
+  - Name: "\u6D77\u6F9C\u8C03\u8272\u677F3"
+    Colors:
+    - {r: 1, g: 0, b: 0.7423315, a: 1}
+    - {r: 0.8215008, g: 0, b: 1, a: 1}
+    - {r: 0, g: 0.097765684, b: 1, a: 1}
+    - {r: 0, g: 0.6974547, b: 1, a: 1}
+    - {r: 0, g: 1, b: 0.67775345, a: 1}
 --- !u!4 &166218342
 Transform:
   m_ObjectHideFlags: 0
@@ -1122,8 +1158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea5aa7f8d563ba4db66982c5af76937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChildOrSelfTransform: {fileID: 1249932136}
-  ChildGameObject: {fileID: 242072812}
+  ChildOrSelfTransform: {fileID: 1786855094}
+  ChildGameObject: {fileID: 1249932135}
   Lights:
   - {fileID: 490316072}
   - {fileID: 490316072}
@@ -1284,7 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de530f60e628074bbea21985dd26aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SomeEnumField: 2
+  SomeEnumField: 1
 --- !u!4 &1517924022
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,7 +1458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SomeColor: {r: 0, g: 0, b: 0, a: 0}
   Obj: {fileID: 0}
-  SomeText: Lorem Ipsum
+  SomeText: "SomeText\u5BF9\u5E94\u7684Label\u5DF2\u7ECF\u88AB\u9690\u85CF\uFF0C\u4F60\u73B0\u5728\u770B\u5230\u7684\u662F\u4ED6\u5BF9\u5E94\u7684\u5185\u5BB9\uFF08Value\uFF09"
   Overflow: A very very very very very very very very very long string that has been
     configured to overflow.
   DisplayAllOfIt: A very very very very very very very very long string that has been
@@ -1499,7 +1535,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776130682}
-  - component: {fileID: 1776130681}
   m_Layer: 0
   m_Name: FilePathAttributeExample
   m_TagString: Untagged
@@ -1507,30 +1542,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1776130681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776130680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6de4d59af32f79b48b4a80dca63842b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UnityProjectPath: .gitignore
-  RelativeToParentPath: Readme.txt
-  ResourcePath: 
-  ScriptFiles: Assets/Scripts/Attribute/2.TypeSpecifics/DisplayAsStringAttributeExample.cs
-  AbsolutePath: E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Assets/Plugins/Sirenix/Readme.txt
-  ExistingPath: 
-  Backslashes: Assets\Plugins\Sirenix\Readme.txt
-  DynamicFilePath: 
-  DynamicParent: Assets/Plugin/Sirenix
-  DynamicExtensions: cs, unity, jpg
-  ListOfFiles:
-  - 
 --- !u!4 &1776130682
 Transform:
   m_ObjectHideFlags: 0
@@ -1687,29 +1698,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224e2c0ba8efa064b8999149865ec4a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnyAllMaterials: {fileID: 2100000, guid: caf38b877ea31a34abc18266fbf913a2, type: 2}
+  AnyAllMaterials: {fileID: 2100000, guid: f8d3f9d73fb5f67429165e46095d285b, type: 2}
   ListOfAllMaterials:
-  - {fileID: 2100000, guid: caf38b877ea31a34abc18266fbf913a2, type: 2}
+  - {fileID: 2100000, guid: df9dfb749e670f04db37037783d07dfc, type: 2}
+  TreeView: {fileID: 13400000, guid: d83a1e2fe702e1e40b60bf6871e970b5, type: 2}
   NoTreeView: {fileID: 13400000, guid: d83a1e2fe702e1e40b60bf6871e970b5, type: 2}
   ScriptableObjectsFromFolder: {fileID: 0}
-  ScriptableObjectsFromMultipleFolders: {fileID: 2100000, guid: 5660fe28157ac4a4ba970ae4c7f6a6ad,
-    type: 2}
-  AssetDatabaseSearchFilters: {fileID: 7400000, guid: 28be8b7fdea2bf54e8f2efd7ab77dcd8,
+  ScriptableObjectsFromMultipleFolders: {fileID: 0}
+  AssetDatabaseSearchFilters: {fileID: 7400000, guid: 0757f7ecbb4d4a34eaae49ea68bb1840,
     type: 2}
   DisableListAddButtonBehaviour:
   - {fileID: 7942432316428950613, guid: 81a965c5c5631b4409531388f5ff3f64, type: 3}
-  DisableListElementBehaviour:
-  - {fileID: 1130409879911729373, guid: 60ec5090f090dd044833c8916222352c, type: 3}
-  - {fileID: 1792833760980081256, guid: d2ff1823387c8cd4093681918fb8426e, type: 3}
-  ExcludeExistingValuesInList:
+  - {fileID: 1249932135}
+  - {fileID: 672759307}
+  - {fileID: 1249932135}
+  DisableListElementBehaviour_False:
+  - {fileID: 7942432316428950613, guid: 81a965c5c5631b4409531388f5ff3f64, type: 3}
+  DisableListElementBehaviour_True:
   - {fileID: 1130409879911729373, guid: ba96b2396797c164692d5865c4cd0655, type: 3}
-  - {fileID: 1130409879911729373, guid: 60ec5090f090dd044833c8916222352c, type: 3}
-  DisableUniqueListBehaviour:
+  ExcludeExistingValuesInList_True:
   - {fileID: 1130409879911729373, guid: ba96b2396797c164692d5865c4cd0655, type: 3}
-  ExpandAllMenuItems:
-  - {fileID: 1130409879911729373, guid: ba96b2396797c164692d5865c4cd0655, type: 3}
+  - {fileID: 1130409879911729373, guid: 800847dfb18767d4e81f382b5d97c2d8, type: 3}
   - {fileID: 1130409879911729373, guid: 60ec5090f090dd044833c8916222352c, type: 3}
-  - {fileID: 5653939970305552363, guid: 4a98dd3a483e36f4aa33a27a949bbcae, type: 3}
+  ExcludeExistingValuesInList_False:
+  - {fileID: 1130409879911729373, guid: ba96b2396797c164692d5865c4cd0655, type: 3}
+  - {fileID: 1130409879911729373, guid: 800847dfb18767d4e81f382b5d97c2d8, type: 3}
+  - {fileID: 1130409879911729373, guid: 60ec5090f090dd044833c8916222352c, type: 3}
+  DisableUniqueListBehaviour_True:
+  - {fileID: 7942432316428950613, guid: 81a965c5c5631b4409531388f5ff3f64, type: 3}
+  DisableUniqueListBehaviour_False:
+  - {fileID: 7942432316428950613, guid: 81a965c5c5631b4409531388f5ff3f64, type: 3}
+  ExpandAllMenuItems_True:
+  - {fileID: 7501504051930011887, guid: 36f452690498e3749b14f8c78f84f43f, type: 3}
+  ExpandAllMenuItems_False:
+  - {fileID: 7942432316428950613, guid: 81a965c5c5631b4409531388f5ff3f64, type: 3}
   CustomDropdownTitle: []
 --- !u!1 &2024210899
 GameObject:
@@ -1740,11 +1762,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2d981a97f6d6548a1a0cd475f7067c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultEnumBitmask: 10
-  SomeEnumField: 1
-  WideEnumField: 3
-  BitmaskEnumField: 0
-  EnumFieldWide: 0
+  DefaultEnumBitmask: 6
+  SomeEnumField: 4
+  WideEnumField: 1
+  BitmaskEnumField: 14
+  EnumFieldWide: 10
 --- !u!4 &2024210901
 Transform:
   m_ObjectHideFlags: 0

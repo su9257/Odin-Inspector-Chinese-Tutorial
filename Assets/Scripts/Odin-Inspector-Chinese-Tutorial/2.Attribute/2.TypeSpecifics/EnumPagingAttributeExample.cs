@@ -23,5 +23,3 @@ public class EnumPagingAttributeExample : MonoBehaviour
         UnityEditor.Tools.current = this.sceneTool;
     }
 }
-
-

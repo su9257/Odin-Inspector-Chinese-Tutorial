@@ -18,4 +18,3 @@ public class ChildGameObjectsOnlyAttributeExample : MonoBehaviour
         Debug.Log(ChildGameObject);
     }
 }
-

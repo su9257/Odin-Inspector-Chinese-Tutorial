@@ -2,29 +2,26 @@
 using Sirenix.OdinInspector;
 
 public class DisplayAsStringAttributeExample : MonoBehaviour
-{
-    [InfoBox(
-        "Instead of disabling values in the inspector in order to show some information or debug a value. " +
-        "You can use DisplayAsString to show the value as text, instead of showing it in a disabled drawer")]
+{ 
     [DisplayAsString]
     public Color SomeColor;
 
+    [PropertySpace(40)]
     [DisplayAsString]
     public GameObject Obj;
 
-    [BoxGroup("SomeBox")]
+    [PropertySpace(40)]
     [HideLabel]
     [DisplayAsString]
-    public string SomeText = "Lorem Ipsum";
+    public string SomeText = "SomeText对应的Label已经被隐藏，你现在看到的是他对应的内容（Value）";
 
-    [InfoBox("The DisplayAsString attribute can also be configured to enable or disable overflowing to multiple lines.")]
+    [PropertySpace(40)]
     [HideLabel]
     [DisplayAsString]
     public string Overflow = "A very very very very very very very very very long string that has been configured to overflow.";
 
+    [PropertySpace(40)]
     [HideLabel]
     [DisplayAsString(false)]//这是为false时，如果inspector显示空间不足，则自动换行
     public string DisplayAllOfIt = "A very very very very very very very very long string that has been configured to not overflow.";
 }
-
-
