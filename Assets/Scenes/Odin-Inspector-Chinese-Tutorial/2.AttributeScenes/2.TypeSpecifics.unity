@@ -1535,6 +1535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776130682}
+  - component: {fileID: 1776130681}
   m_Layer: 0
   m_Name: FilePathAttributeExample
   m_TagString: Untagged
@@ -1542,6 +1543,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1776130681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776130680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de4d59af32f79b48b4a80dca63842b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnityProjectPath: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/2.TypeSpecifics.unity
+  RelativeToParentPath: Readme.txt
+  ResourcePath: ../Scenes/Odin-Inspector-Chinese-Tutorial/1.QuickStartScenes/1.Simple
+    Attribute Examples.unity
+  ScriptFiles: Assets/Scripts/Odin-Inspector-Chinese-Tutorial/ExampleScript.cs
+  AbsolutePath: E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Assets/Scripts/Odin-Inspector-Chinese-Tutorial/ExampleScript.cs
+  ExistingPath: 
+  Backslashes: Assets\Scripts\Odin-Inspector-Chinese-Tutorial\ExampleScript.cs
+  DynamicFilePath: 2.AttributeScenes/2.TypeSpecifics.unity
+  DynamicParent: Assets/Scenes/Odin-Inspector-Chinese-Tutorial
+  DynamicExtensions: cs, unity, png
+  ListOfFiles:
+  - 
+  - 
+  - 
+  - 
 --- !u!4 &1776130682
 Transform:
   m_ObjectHideFlags: 0

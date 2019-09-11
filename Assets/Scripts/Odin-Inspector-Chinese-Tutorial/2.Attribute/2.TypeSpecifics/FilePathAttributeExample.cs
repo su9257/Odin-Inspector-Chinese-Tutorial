@@ -5,7 +5,7 @@ using UnityEngine;
 public class FilePathAttributeExample : MonoBehaviour
 {
     // 默认情况下，FolderPath提供了一个相对于Unity项目的路径。
-    [FilePath(AbsolutePath = false)]
+    [FilePath]
     public string UnityProjectPath;
 
     // 可以提供自定义父路径。父路径可以是相对于Unity项目的，也可以是绝对的。
@@ -22,14 +22,16 @@ public class FilePathAttributeExample : MonoBehaviour
     public string ScriptFiles;
 
     // 通过将AbsolutePath设置为true，文件路径将提供一个绝对路径。
+    [PropertySpace(40,40)]
     [FilePath(AbsolutePath = true)]
     public string AbsolutePath;
 
-    // 如果提供的路径无效，还可以将FilePath配置为显示错误。
+    // 如果提供的路径无效，还可以将FilePath配置为显示错误信息。
     [FilePath(RequireExistingPath = true)]
     public string ExistingPath;
 
     // 默认情况下，FilePath将强制使用前斜杠。还可以将其配置为使用反斜杠
+    [PropertySpace(40, 40)]
     [FilePath(UseBackslashes = true)]
     public string Backslashes;
 
@@ -44,10 +46,9 @@ public class FilePathAttributeExample : MonoBehaviour
     [BoxGroup("Member referencing")]
     public string DynamicExtensions = "cs, unity, jpg";
 
+
     // FilePath还支持列表和数组。
-    [FilePath(ParentFolder = "Assets/Plugins/Sirenix/Demos/Odin Inspector")]
+    [FilePath(ParentFolder = "Assets/Scenes/Odin-Inspector-Chinese-Tutorial/")]
     [BoxGroup("Lists")]
     public string[] ListOfFiles;
 }
-
-
