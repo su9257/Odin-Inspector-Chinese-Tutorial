@@ -62,5 +62,3 @@ public class TableListAttributeExample : MonoBehaviour
         public void Test2() { }
     }
 }
-
-

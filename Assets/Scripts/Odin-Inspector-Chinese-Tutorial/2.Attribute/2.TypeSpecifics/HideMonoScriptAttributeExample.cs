@@ -17,17 +17,6 @@ using UnityEngine;
             Hidden = ExampleHelper.GetScriptableObject<HideMonoScript>();
             Shown = ExampleHelper.GetScriptableObject<ShowMonoScript>();
         }
-
-        [HideMonoScript]
-        public class HideMonoScript : ScriptableObject
-        {
-            public string Value;
-        }
-
-        public class ShowMonoScript : ScriptableObject
-        {
-            public string Value;
-        }
     }
 
 

@@ -496,15 +496,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8bc7c2017b6c874b8d7088b407e52f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnityProjectPath: 
-  RelativeToParentPath: 
-  ResourcePath: 
-  AbsolutePath: 
-  ExistingPath: 
-  Backslashes: 
+  UnityProjectPath: Assets/Scenes/Odin-Inspector-Chinese-Tutorial
+  RelativeToParentPath: Demos
+  ResourcePath: ../Scenes
+  AbsolutePath: D:/Unity_Project/Odin-Inspector-Chinese-Tutorial/Assets/Scenes
+  ExistingPath: Assets/Scenes
+  Backslashes: Assets\Scenes
   DynamicFolderPath: 
   DynamicParent: Assets/Plugins/Sirenix
-  ListOfFolders: []
+  ListOfFolders:
+  - Odin Inspector
+  - Assemblies
+  - 
+  - 
+  - 
 --- !u!4 &291665205
 Transform:
   m_ObjectHideFlags: 0
@@ -731,11 +736,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnlyPrefabs: []
-  SomePrefab: {fileID: 0}
+  SomePrefab: {fileID: 6071406288493268044, guid: a45230430a9ae1c49a4cd69fb5a97a73,
+    type: 3}
   MaterialAsset: {fileID: 0}
   SomeMeshRendererOnPrefab: {fileID: 0}
   OnlySceneObjects: []
-  SomeSceneObject: {fileID: 0}
+  SomeSceneObject: {fileID: 2024210899}
   SomeMeshRenderer: {fileID: 0}
 --- !u!4 &672759309
 Transform:
@@ -917,7 +923,7 @@ MonoBehaviour:
     A: 
     B: 0
     Hidden: 86
-  Table:
+  TableItemList:
   - A: 
     B: 0
     Hidden: 0
@@ -970,7 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2961208a4627a8d4f949097e55e81e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InlineObject: {fileID: 0}
+  InlineObject: {fileID: 11400000, guid: d650500bac1552046aa3440c32b001f7, type: 2}
 --- !u!4 &1204503625
 Transform:
   m_ObjectHideFlags: 0
@@ -1014,7 +1020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c0e6b89876680344bcf3ebfb983d298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegularPreviewField: {fileID: 0}
   A: 
   B: 
   C: 
@@ -1066,15 +1071,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bd0170f5352684f80f45c0e727029b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boxed: {fileID: 0}
-  Foldout: {fileID: 0}
-  CompletelyHidden: {fileID: 0}
-  OnlyHiddenWhenNotNull: {fileID: 0}
-  InlineComponent: {fileID: 0}
-  FullInlineEditor: {fileID: 0}
-  InlineMaterial: {fileID: 0}
-  InlineMaterialList: []
-  InlineMeshPreview: {fileID: 0}
+  Boxed: {fileID: 11400000, guid: aef1175cfc12c8f4ebd87429501bcfe4, type: 2}
+  Foldout: {fileID: 11400000, guid: aef1175cfc12c8f4ebd87429501bcfe4, type: 2}
+  CompletelyHidden: {fileID: 11400000, guid: aef1175cfc12c8f4ebd87429501bcfe4, type: 2}
+  OnlyHiddenWhenNotNull: {fileID: 11400000, guid: aef1175cfc12c8f4ebd87429501bcfe4,
+    type: 2}
+  InlineComponent: {fileID: 11400000, guid: aef1175cfc12c8f4ebd87429501bcfe4, type: 2}
+  FullInlineEditor: {fileID: 2100000, guid: 3a7e1c20921d989428484d1a397d0e24, type: 2}
+  InlineMaterial: {fileID: 2100000, guid: df9dfb749e670f04db37037783d07dfc, type: 2}
+  InlineMaterialList:
+  - {fileID: 2100000, guid: 55b30c583d1c125449958ee841d7d20e, type: 2}
+  - {fileID: 2100000, guid: df9dfb749e670f04db37037783d07dfc, type: 2}
+  - {fileID: 2100000, guid: f8d3f9d73fb5f67429165e46095d285b, type: 2}
+  InlineMeshPreview: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1216947819
 Transform:
   m_ObjectHideFlags: 0
@@ -1230,6 +1239,36 @@ MonoBehaviour:
     A: 
     B: 
     C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
   AlwaysExpandedTable:
   - Icon: {fileID: 0}
     Description: "\u83DC\u9E1F\u6D77\u6F9C"
@@ -1241,7 +1280,252 @@ MonoBehaviour:
     A: 
     B: 
     C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
   TableWithPaging:
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
+  - Icon: {fileID: 0}
+    Description: "\u83DC\u9E1F\u6D77\u6F9C"
+    A: 
+    B: 
+    C: 
   - Icon: {fileID: 0}
     Description: "\u83DC\u9E1F\u6D77\u6F9C"
     A: 
@@ -1839,8 +2123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2513a824166b15419f4f64495b51786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hidden: {fileID: 0}
-  Shown: {fileID: 0}
+  Hidden: {fileID: 11400000, guid: 0b4226e535d7b9b4a95421270c3b97ff, type: 2}
+  Shown: {fileID: 11400000, guid: 74f55229bb3998f4c9efb1bdaec67fd0, type: 2}
 --- !u!4 &2114786357
 Transform:
   m_ObjectHideFlags: 0

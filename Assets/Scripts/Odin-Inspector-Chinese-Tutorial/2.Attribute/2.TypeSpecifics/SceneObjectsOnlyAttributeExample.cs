@@ -28,5 +28,3 @@ public class SceneObjectsOnlyAttributeExample : MonoBehaviour
     [SceneObjectsOnly]
     public MeshRenderer SomeMeshRenderer;
 }
-
-

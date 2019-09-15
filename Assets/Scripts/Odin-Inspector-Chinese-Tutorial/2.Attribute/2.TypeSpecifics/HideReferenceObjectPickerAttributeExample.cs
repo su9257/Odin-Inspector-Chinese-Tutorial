@@ -13,12 +13,13 @@ public class HideReferenceObjectPickerAttributeExample : MonoBehaviour
     [HideReferenceObjectPicker]
     public MyCustomReferenceType OdinSerializedProperty2 = new MyCustomReferenceType();
     [ShowInInspector]
+    [PropertySpace(40)]
     [Title("Shown Object Pickers")]
     public MyCustomReferenceType OdinSerializedProperty3 = new MyCustomReferenceType();
     [ShowInInspector]
     public MyCustomReferenceType OdinSerializedProperty4 = new MyCustomReferenceType();
 
-    // Protip: You can also put the HideInInspector attribute on the class definition itself to hide it globally for all members.
+    // Protip: 您还可以将HideInInspector属性放在类定义本身上，以便为所有成员全局隐藏它。
     //[HideReferenceObjectPicker]
     public class MyCustomReferenceType
     {
@@ -27,5 +28,3 @@ public class HideReferenceObjectPickerAttributeExample : MonoBehaviour
         public int C;
     }
 }
-
-

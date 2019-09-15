@@ -16,6 +16,7 @@ public class InlineEditorAttributeExample : MonoBehaviour
     public ExampleTransform CompletelyHidden;
 
     [Title("Show ObjectField if null")]
+    [ShowInInspector]
     [InlineEditor(InlineEditorObjectFieldModes.Hidden)]
     public ExampleTransform OnlyHiddenWhenNotNull;
 
@@ -31,30 +32,9 @@ public class InlineEditorAttributeExample : MonoBehaviour
     [InlineEditor(InlineEditorModes.SmallPreview)]
     public Material[] InlineMaterialList = new Material[]
     {
-    //ExampleHelper.GetMaterial(),
-    //ExampleHelper.GetMaterial(),
-    //ExampleHelper.GetMaterial(),
     };
 
     [InlineEditor(InlineEditorModes.LargePreview)]
     public Mesh InlineMeshPreview ;
 
-    // You can also use the InlineEditor attribute directly on a class definition itself.
-    //[InlineEditor]
-    public class ExampleTransform : ScriptableObject
-    {
-        public Vector3 Position;
-        public Quaternion Rotation;
-        public Vector3 Scale = Vector3.one;
-    }
-
-
-    private void Start()
-    {
-        Boxed = ExampleHelper.GetScriptableObject<ExampleTransform>();
-        Foldout = ExampleHelper.GetScriptableObject<ExampleTransform>();
-        CompletelyHidden = ExampleHelper.GetScriptableObject<ExampleTransform>();
-        OnlyHiddenWhenNotNull = ExampleHelper.GetScriptableObject<ExampleTransform>();
-    }
 }
-
