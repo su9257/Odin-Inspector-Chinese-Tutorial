@@ -976,7 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2961208a4627a8d4f949097e55e81e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InlineObject: {fileID: 11400000, guid: d650500bac1552046aa3440c32b001f7, type: 2}
+  InlineObject: {fileID: 11400000, guid: 1db175d205312b44f84dda05b64cb77c, type: 2}
 --- !u!4 &1204503625
 Transform:
   m_ObjectHideFlags: 0
@@ -1694,9 +1694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeftToggled: 0
-  A: 0
-  B: 0
-  C: 0
+  normalBool: 1
 --- !u!4 &1628736749
 Transform:
   m_ObjectHideFlags: 0
@@ -1791,11 +1789,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Toggler:
-    Enabled: 0
-    MyValue: 0
+    Enabled: 1
+    MyValue: -59
   Toggleable:
-    Enabled: 0
-    Text: 
+    Enabled: 1
+    Text: 123123
 --- !u!4 &1712404964
 Transform:
   m_ObjectHideFlags: 0

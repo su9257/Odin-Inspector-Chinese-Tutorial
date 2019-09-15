@@ -1,7 +1,5 @@
 ﻿using Sirenix.OdinInspector;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ToggleAttributeExample : MonoBehaviour
@@ -18,7 +16,7 @@ public class ToggleAttributeExample : MonoBehaviour
         public int MyValue;
     }
 
-    // You can also use the Toggle attribute directly on a class definition.
+    // 您还可以直接在类定义上使用Toggle属性。
     [Serializable, Toggle("Enabled")]
     public class ToggleableClass
     {

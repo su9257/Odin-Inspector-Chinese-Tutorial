@@ -1,49 +1,56 @@
 ﻿using Sirenix.OdinInspector;
 using Sirenix.Utilities;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TableMatrixAttributeExample : MonoBehaviour
 {
-    //[TableMatrix(HorizontalTitle = "Square Celled Matrix", SquareCells = true)]
-    //public Texture2D[,] SquareCelledMatrix = new Texture2D[8, 4]
-    //{
-    //{ ExampleHelper.GetTexture(), null, null, null },
-    //{ null, ExampleHelper.GetTexture(), null, null },
-    //{ null, null, ExampleHelper.GetTexture(), null },
-    //{ null, null, null, ExampleHelper.GetTexture() },
-    //{ ExampleHelper.GetTexture(), null, null, null },
-    //{ null, ExampleHelper.GetTexture(), null, null },
-    //{ null, null, ExampleHelper.GetTexture(), null },
-    //{ null, null, null, ExampleHelper.GetTexture() },
-    //};
+    [ShowInInspector]
+    [TableMatrix(HorizontalTitle = "横向方形矩阵标题",VerticalTitle = "纵向方形矩阵标题", SquareCells = true)] //SquareCells 为True，则其他的cell的宽高将于第一个cell的宽度相等
+    public Texture2D[,] SquareCelledMatrix = new Texture2D[8, 4]
+    {
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null,null },
+    };
 
-    //[TableMatrix(SquareCells = true)]
-    //public Mesh[,] PrefabMatrix = new Mesh[8, 4]
-    //{
-    //{ ExampleHelper.GetMesh(), null, null, null },
-    //{ null, ExampleHelper.GetMesh(), null, null },
-    //{ null, null, ExampleHelper.GetMesh(), null },
-    //{ null, null, null, ExampleHelper.GetMesh() },
-    //{ null, null, null, ExampleHelper.GetMesh() },
-    //{ null, null, ExampleHelper.GetMesh(), null },
-    //{ null, ExampleHelper.GetMesh(), null, null },
-    //{ ExampleHelper.GetMesh(), null, null, null },
-    //};
+    [PropertySpace(40)]
+    [ShowInInspector]
+    [TableMatrix(SquareCells = true)]
+    public Mesh[,] PrefabMatrix = new Mesh[8, 4]
+    {
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    { null, null, null, null },
+    };
 
-    [TableMatrix(HorizontalTitle = "Read Only Matrix", IsReadOnly = true)]
+    [PropertySpace(40)]
+    [ShowInInspector]
+    [TableMatrix(HorizontalTitle = "只读矩阵", IsReadOnly = true)]//IsReadOnly 不可更改矩阵的顺序
     public int[,] ReadOnlyMatrix = new int[5, 5];
 
-    [TableMatrix(HorizontalTitle = "X axis", VerticalTitle = "Y axis")]
+    [PropertySpace(40)]
+    [ShowInInspector]
+    [TableMatrix(HorizontalTitle = "横向标题", VerticalTitle = "纵向标题")]
     public InfoMessageType[,] LabledMatrix = new InfoMessageType[6, 6];
 
-
-    [TableMatrix(HorizontalTitle = "Custom Cell Drawing", DrawElementMethod = "DrawColoredEnumElement", ResizableColumns = false, RowHeight = 16)]
+    [PropertySpace(40)]
+    [ShowInInspector]
+    [TableMatrix(HorizontalTitle = "Custom Cell Drawing", DrawElementMethod = "DrawColoredEnumElement", ResizableColumns = false, RowHeight = 40)]
     public bool[,] CustomCellDrawing;
 
+    [PropertySpace(40)]
     [ShowInInspector, DoNotDrawAsReference]
-    [TableMatrix(HorizontalTitle = "Transposed Custom Cell Drawing", DrawElementMethod = "DrawColoredEnumElement", ResizableColumns = false, RowHeight = 16, Transpose = true)]
+    [TableMatrix(HorizontalTitle = "Transposed Custom Cell Drawing", DrawElementMethod = "DrawColoredEnumElement", ResizableColumns = true, RowHeight = 16, Transpose = true)]//Transpose顺序颠倒
     public bool[,] Transposed { get { return CustomCellDrawing; } set { CustomCellDrawing = value; } }
 
     private static bool DrawColoredEnumElement(Rect rect, bool value)
@@ -59,23 +66,4 @@ public class TableMatrixAttributeExample : MonoBehaviour
 
         return value;
     }
-
-    //public TransposeTableMatrixExample()
-    //{
-    //    // =)
-    //    this.CustomCellDrawing = new bool[15, 15];
-    //    this.CustomCellDrawing[6, 5] = true;
-    //    this.CustomCellDrawing[6, 6] = true;
-    //    this.CustomCellDrawing[6, 7] = true;
-    //    this.CustomCellDrawing[8, 5] = true;
-    //    this.CustomCellDrawing[8, 6] = true;
-    //    this.CustomCellDrawing[8, 7] = true;
-    //    this.CustomCellDrawing[5, 9] = true;
-    //    this.CustomCellDrawing[5, 10] = true;
-    //    this.CustomCellDrawing[9, 9] = true;
-    //    this.CustomCellDrawing[9, 10] = true;
-    //    this.CustomCellDrawing[6, 11] = true;
-    //    this.CustomCellDrawing[7, 11] = true;
-    //    this.CustomCellDrawing[8, 11] = true;
-    //}
 }
