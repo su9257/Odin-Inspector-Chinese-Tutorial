@@ -6,7 +6,10 @@ using UnityEngine;
 
 public class ToggleGroupAttributeExample : MonoBehaviour
 {
+<<<<<<< HEAD
+=======
     // Simple Toggle Group
+>>>>>>> origin/master
     [ToggleGroup("MyToggle")]
     public bool MyToggle;
 

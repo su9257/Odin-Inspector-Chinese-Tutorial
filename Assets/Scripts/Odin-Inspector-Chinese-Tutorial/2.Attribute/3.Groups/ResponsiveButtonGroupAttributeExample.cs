@@ -42,7 +42,10 @@ public class ResponsiveButtonGroupAttributeExample : MonoBehaviour
     [ResponsiveButtonGroup("SomeOtherGroup/SomeBtnGroup")] public void Baz1() { }
     [ResponsiveButtonGroup("SomeOtherGroup/SomeBtnGroup")] public void Baz2() { }
     [ResponsiveButtonGroup("SomeOtherGroup/SomeBtnGroup")] public void Baz3() { }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/master
     [TitleGroup("Tabs")]
     [HorizontalGroup("Tabs/Split", Width = 0.5f)]
     [TabGroup("Tabs/Split/Parameters", "A")]
