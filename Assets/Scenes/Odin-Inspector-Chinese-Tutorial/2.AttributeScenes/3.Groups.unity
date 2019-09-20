@@ -194,7 +194,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &80040916
+=======
+--- !u!1 &127412224
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,21 +206,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 80040918}
   - component: {fileID: 80040917}
   m_Layer: 0
   m_Name: VerticalGroupAttributeExample
+=======
+  - component: {fileID: 127412226}
+  - component: {fileID: 127412225}
+  m_Layer: 0
+  m_Name: TabGroupAttributeExample
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!114 &80040917
+=======
+--- !u!114 &127412225
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 80040916}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -233,18 +249,59 @@ MonoBehaviour:
   BoxD: 0
   BoxE: 0
 --- !u!4 &80040918
+=======
+  m_GameObject: {fileID: 127412224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731dfb4d0ef85fa4a8dbc7a0a437d4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  One: 0
+  Two: 0
+  Three: 0
+  MyString: 
+  MyFloat: 0
+  TabC:
+    A: 0
+    B: 0
+    C: 0
+  A: 0
+  B: 0
+  C: 0
+  D: 
+  E: 0
+  F:
+    A: 0
+    B: 0
+    C: 0
+  NameA: 
+  NameB: 
+  NameC: 
+  ValueA: 0
+  ValueB: 0
+  ValueC: 0
+--- !u!4 &127412226
+>>>>>>> origin/master
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 80040916}
+=======
+  m_GameObject: {fileID: 127412224}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 11
+=======
+  m_RootOrder: 8
+>>>>>>> origin/master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &132185047
 GameObject:
@@ -315,7 +372,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &303726710
+=======
+--- !u!1 &374517938
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,21 +384,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 303726712}
   - component: {fileID: 303726711}
   m_Layer: 0
   m_Name: ResponsiveButtonGroupAttributeExample
+=======
+  - component: {fileID: 374517940}
+  - component: {fileID: 374517939}
+  m_Layer: 0
+  m_Name: VerticalGroupAttributeExample
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!114 &303726711
+=======
+--- !u!114 &374517939
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 303726710}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -351,18 +424,44 @@ MonoBehaviour:
   ValueB: 0
   ValueC: 0
 --- !u!4 &303726712
+=======
+  m_GameObject: {fileID: 374517938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685c7404c03086b49a15f492fde1d568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  First: 0
+  Second: 0
+  A: 0
+  B: 0
+  BoxA1: 0
+  BoxB1: 0
+  BoxC1: 0
+  BoxD1: 0
+  BoxE1: 0
+--- !u!4 &374517940
+>>>>>>> origin/master
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 303726710}
+=======
+  m_GameObject: {fileID: 374517938}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 7
+=======
+  m_RootOrder: 11
+>>>>>>> origin/master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &551951240
 GameObject:
@@ -409,6 +508,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &766550559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766550561}
+  - component: {fileID: 766550560}
+  m_Layer: 0
+  m_Name: HorizontalGroupAttributeExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &766550560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766550559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6530674e9238d484eb6c5128549e3100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  A: 0
+  B:
+    serializedVersion: 2
+    m_Bits: 0
+  C: 0
+  D: 0
+  E: 0
+  L: 0
+  M: 0
+  N: 0
+  O: 0
+  BoxA1: 0
+  BoxB1: 0
+  BoxC1: 0
+  BoxD1: 0
+  BoxE1: 0
+--- !u!4 &766550561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766550559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774533711
 GameObject:
@@ -716,7 +874,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1498369310
+=======
+--- !u!1 &1854527093
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -724,21 +886,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1498369312}
   - component: {fileID: 1498369311}
   m_Layer: 0
   m_Name: TitleGroupAttributeExample
+=======
+  - component: {fileID: 1854527095}
+  - component: {fileID: 1854527094}
+  m_Layer: 0
+  m_Name: ToggleGroupAttributeExample
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!114 &1498369311
+=======
+--- !u!114 &1854527094
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1498369310}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -759,20 +933,72 @@ MonoBehaviour:
   BoxD: 0
   BoxE: 0
 --- !u!4 &1498369312
+=======
+  m_GameObject: {fileID: 1854527093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1d7ab00010a8d488b6224862f82012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyToggle: 1
+  A: 0
+  B: 
+  EnableGroupOne: 1
+  GroupOneTitle: One
+  GroupOneA: 0
+  GroupOneB: 0
+  Three:
+    Enabled: 1
+    Title: 
+    A: 0
+    B: 0
+  Four:
+    Enabled: 1
+    Title: 
+    A: 0
+    B: 0
+    C: 0
+    D: 0
+    F: 0
+  Five:
+    Enabled: 1
+    Title: 
+    A: 0
+    B: 0
+    Text: 
+  ToggleList:
+  - Enabled: 1
+    Test: 2
+  - Enabled: 1
+    Test: 5
+  - Enabled: 0
+    Test: 7
+--- !u!4 &1854527095
+>>>>>>> origin/master
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1498369310}
+=======
+  m_GameObject: {fileID: 1854527093}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838488473
+=======
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1962014434
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -780,21 +1006,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1838488475}
   - component: {fileID: 1838488474}
   m_Layer: 0
   m_Name: HorizontalGroupAttributeExample
+=======
+  - component: {fileID: 1962014436}
+  - component: {fileID: 1962014435}
+  m_Layer: 0
+  m_Name: TitleGroupAttributeExample
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!114 &1838488474
+=======
+--- !u!114 &1962014435
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1838488473}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -812,26 +1050,56 @@ MonoBehaviour:
   M: 0
   N: 0
   O: 0
+=======
+  m_GameObject: {fileID: 1962014434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ad42dfd6ce3fd4691357c1d58d20a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SomeInt1: 0
+  SomeString1: 
+  SomeVector1: {x: 0, y: 0}
+  SomeInt2: 0
+  SomeString2: 
+  A: 0
+  B: 0
+  C: 0
+>>>>>>> origin/master
   BoxA: 0
   BoxB: 0
   BoxC: 0
   BoxD: 0
   BoxE: 0
+<<<<<<< HEAD
 --- !u!4 &1838488475
+=======
+--- !u!4 &1962014436
+>>>>>>> origin/master
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1838488473}
+=======
+  m_GameObject: {fileID: 1962014434}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041851156
+=======
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2000146547
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,21 +1107,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 2041851158}
   - component: {fileID: 2041851157}
   m_Layer: 0
   m_Name: TabGroupAttributeExample
+=======
+  - component: {fileID: 2000146549}
+  - component: {fileID: 2000146548}
+  m_Layer: 0
+  m_Name: ResponsiveButtonGroupAttributeExample
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!114 &2041851157
+=======
+--- !u!114 &2000146548
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2041851156}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -878,23 +1158,43 @@ MonoBehaviour:
     A: 0
     B: 0
     C: 0
+=======
+  m_GameObject: {fileID: 2000146547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148b2b50a5007924bbd650e4be03aab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> origin/master
   NameA: 
   NameB: 
   NameC: 
   ValueA: 0
   ValueB: 0
   ValueC: 0
+<<<<<<< HEAD
 --- !u!4 &2041851158
+=======
+--- !u!4 &2000146549
+>>>>>>> origin/master
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2041851156}
+=======
+  m_GameObject: {fileID: 2000146547}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 8
+=======
+  m_RootOrder: 7
+>>>>>>> origin/master
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

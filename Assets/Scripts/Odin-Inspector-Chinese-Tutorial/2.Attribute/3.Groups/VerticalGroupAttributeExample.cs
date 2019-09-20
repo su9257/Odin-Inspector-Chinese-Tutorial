@@ -24,6 +24,7 @@ public class VerticalGroupAttributeExample : MonoBehaviour
     [HorizontalGroup("Multiple Stacked Boxes/Split")]
     [VerticalGroup("Multiple Stacked Boxes/Split/Left")]
     [BoxGroup("Multiple Stacked Boxes/Split/Left/Box A")]
+<<<<<<< HEAD
     public int BoxA;
 
     [BoxGroup("Multiple Stacked Boxes/Split/Left/Box B")]
@@ -32,4 +33,14 @@ public class VerticalGroupAttributeExample : MonoBehaviour
     [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
     [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
     public int BoxC, BoxD, BoxE;
+=======
+    public int BoxA1;
+
+    [BoxGroup("Multiple Stacked Boxes/Split/Left/Box B")]
+    public int BoxB1;
+
+    [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
+    [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
+    public int BoxC1, BoxD1, BoxE1;
+>>>>>>> origin/master
 }

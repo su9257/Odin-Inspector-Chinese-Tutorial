@@ -13,6 +13,10 @@ public class HorizontalGroupAttributeExample : MonoBehaviour
     public LayerMask B;
 
     // LabelWidth can be helpfull when dealing with HorizontalGroups.
+<<<<<<< HEAD
+=======
+    //在处理水平组时，LabelWidth可以提供帮助。
+>>>>>>> origin/master
     [HorizontalGroup("Group 1", LabelWidth = 20)]
     public int C;
 
@@ -23,6 +27,10 @@ public class HorizontalGroupAttributeExample : MonoBehaviour
     public int E;
 
     // Having multiple properties in a column can be achived using multiple groups. Checkout the "Combining Group Attributes" example.
+<<<<<<< HEAD
+=======
+    //可以使用多个组在列中实现多个属性。签出“组合组属性”示例。
+>>>>>>> origin/master
     [HorizontalGroup("Split", 0.5f, LabelWidth = 20)]
     [BoxGroup("Split/Left")]
     public int L;
@@ -37,6 +45,10 @@ public class HorizontalGroupAttributeExample : MonoBehaviour
     public int O;
 
     // Horizontal Group also has supprot for: Title, MarginLeft, MarginRight, PaddingLeft, PaddingRight, MinWidth and MaxWidth.
+<<<<<<< HEAD
+=======
+    [Button(ButtonSizes.Large)]
+>>>>>>> origin/master
     [HorizontalGroup("MyButton", MarginLeft = 0.25f, MarginRight = 0.25f)]
     public void SomeButton()
     {
@@ -66,6 +78,7 @@ public class HorizontalGroupAttributeExample : MonoBehaviour
     [HorizontalGroup("Multiple Stacked Boxes/Split")]
     [VerticalGroup("Multiple Stacked Boxes/Split/Left")]
     [BoxGroup("Multiple Stacked Boxes/Split/Left/Box A")]
+<<<<<<< HEAD
     public int BoxA;
 
     [BoxGroup("Multiple Stacked Boxes/Split/Left/Box B")]
@@ -74,4 +87,14 @@ public class HorizontalGroupAttributeExample : MonoBehaviour
     [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
     [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
     public int BoxC, BoxD, BoxE;
+=======
+    public int BoxA1;
+
+    [BoxGroup("Multiple Stacked Boxes/Split/Left/Box B")]
+    public int BoxB1;
+
+    [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
+    [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
+    public int BoxC1, BoxD1, BoxE1;
+>>>>>>> origin/master
 }

@@ -11,7 +11,11 @@ public class TitleGroupAttributeExample : MonoBehaviour
     [TitleGroup("$SomeString1", "Optional subtitle")]
     public string SomeString1;
 
+<<<<<<< HEAD
     [TitleGroup("Vectors", "Optional subtitle", alignment: TitleAlignments.Centered, horizontalLine: true, boldTitle: true, indent: true)]
+=======
+    [TitleGroup("Vectors", "Optional subtitle", alignment: TitleAlignments.Centered, horizontalLine: true, boldTitle: true, indent: false)]
+>>>>>>> origin/master
     public Vector2 SomeVector1;
 
     [TitleGroup("Ints", "Optional subtitle", alignment: TitleAlignments.Split)]
@@ -62,5 +66,8 @@ public class TitleGroupAttributeExample : MonoBehaviour
     [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
     [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
     public int BoxC, BoxD, BoxE;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
