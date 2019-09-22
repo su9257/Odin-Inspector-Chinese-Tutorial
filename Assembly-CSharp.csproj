@@ -124,6 +124,7 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\ButtonGroupTest.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\FoldoutGroupAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\HorizontalGroupAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\InlineButtonAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\ResponsiveButtonGroupAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\TabGroupAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\3.Groups\TitleGroupAttributeExample.cs" />
