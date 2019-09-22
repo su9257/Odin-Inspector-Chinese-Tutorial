@@ -1,12 +1,9 @@
 ﻿using Sirenix.OdinInspector;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ToggleGroupAttributeExample : MonoBehaviour
 {
-
     [ToggleGroup("MyToggle")]
     public bool MyToggle;
 
@@ -50,7 +47,7 @@ public class ToggleGroupAttributeExample : MonoBehaviour
     [Serializable]
     public class MyToggleObject
     {
-        public bool Enabled;
+        public  bool Enabled;
 
         [HideInInspector]
         public string Title;
@@ -58,7 +55,6 @@ public class ToggleGroupAttributeExample : MonoBehaviour
         public int A;
         public int B;
     }
-
     [Serializable]
     public class MyToggleA : MyToggleObject
     {
@@ -66,7 +62,6 @@ public class ToggleGroupAttributeExample : MonoBehaviour
         public float D;
         public float F;
     }
-
     [Serializable]
     public class MyToggleB : MyToggleObject
     {

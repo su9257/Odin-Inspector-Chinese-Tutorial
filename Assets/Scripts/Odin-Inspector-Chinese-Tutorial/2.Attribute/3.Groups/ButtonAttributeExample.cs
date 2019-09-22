@@ -5,6 +5,21 @@ using UnityEngine;
 
 public class ButtonAttributeExample : MonoBehaviour
 {
+
+
+    [Button]
+    private void Default()
+    {
+    }
+    [Button]
+    private void Default(float a, float b, GameObject c)
+    {
+    }
+
+    [Button]
+    private void Default(float t, float b, float[] c)
+    {
+    }
     public string ButtonName = "Dynamic button name";
 
     public bool Toggle;
@@ -27,47 +42,30 @@ public class ButtonAttributeExample : MonoBehaviour
         this.Toggle = !this.Toggle;
     }
 
-    [Button(ButtonSizes.Small)]
+    [Button(ButtonSizes.Small), GUIColor(0.3f, 0.8f, 1)]
     private void SmallButton()
     {
         this.Toggle = !this.Toggle;
     }
 
-    [Button(ButtonSizes.Medium)]
+    [Button(ButtonSizes.Medium), GUIColor(0.4f, 0.4f, 1)]
     private void MediumSizedButton()
     {
         this.Toggle = !this.Toggle;
     }
 
-    [DisableIf("Toggle")]
-    [HorizontalGroup("Split", 0.5f)]
-    [Button(ButtonSizes.Large), GUIColor(0.4f, 0.8f, 1)]
-    private void FanzyButton1()
+    [Button(ButtonSizes.Large), GUIColor(0.5f, 0.8f, 0.5f)]
+    private void LargeButton()
     {
         this.Toggle = !this.Toggle;
     }
 
-    [HideIf("Toggle")]
-    [VerticalGroup("Split/right")]
-    [Button(ButtonSizes.Large), GUIColor(0, 1, 0)]
-    private void FanzyButton2()
-    {
-        this.Toggle = !this.Toggle;
-    }
-
-    [ShowIf("Toggle")]
-    [VerticalGroup("Split/right")]
-    [Button(ButtonSizes.Large), GUIColor(1, 0.2f, 0)]
-    private void FanzyButton3()
-    {
-        this.Toggle = !this.Toggle;
-    }
-
-    [Button(ButtonSizes.Gigantic)]
+    [Button(ButtonSizes.Gigantic),GUIColor(0.6f, 0.8f, 0)]
     private void GiganticButton()
     {
         this.Toggle = !this.Toggle;
     }
+
 
     [Button(90)]
     private void CustomSizedButton()
@@ -75,16 +73,6 @@ public class ButtonAttributeExample : MonoBehaviour
         this.Toggle = !this.Toggle;
     }
 
-
-    [Button]
-    private void Default(float a, float b, GameObject c)
-    {
-    }
-
-    [Button]
-    private void Default(float t, float b, float[] c)
-    {
-    }
 
     [Button(ButtonSizes.Medium, ButtonStyle.FoldoutButton)]
     private int FoldoutButton(int a = 2, int b = 2)
@@ -98,17 +86,23 @@ public class ButtonAttributeExample : MonoBehaviour
         result = a + b;
     }
 
-    [Button(ButtonStyle.Box)]
-    private void Full(float a, float b, out float c)
+    [Button(ButtonSizes.Large, ButtonStyle.Box)]
+    private void Box(float a, float b, out float c)
     {
         c = a + b;
     }
 
     [Button(ButtonSizes.Large, ButtonStyle.Box)]
-    private void Full(int a, float b, out float c)
+    private void Box(int a, float b, out float c)
     {
         c = a + b;
     }
+    [Button(ButtonSizes.Large, ButtonStyle.CompactBox)]
+    public void CompactBox(int a, float b, out float c)
+    {
+        c = a + b;
+    }
+
 
     [Button(ButtonStyle.CompactBox, Expanded = true)]
     private void CompactExpanded(float a, float b, GameObject c)
@@ -119,6 +113,4 @@ public class ButtonAttributeExample : MonoBehaviour
     private void FullExpanded(float a, float b)
     {
     }
-
-
 }

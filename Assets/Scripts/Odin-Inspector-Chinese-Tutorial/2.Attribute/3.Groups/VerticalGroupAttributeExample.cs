@@ -1,6 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class VerticalGroupAttributeExample : MonoBehaviour
@@ -12,11 +10,9 @@ public class VerticalGroupAttributeExample : MonoBehaviour
     [VerticalGroup("Split/Left")]
     public InfoMessageType Second;
 
-    [HideLabel]
     [VerticalGroup("Split/Right")]
     public int A;
 
-    [HideLabel]
     [VerticalGroup("Split/Right")]
     public int B;
 
@@ -32,13 +28,4 @@ public class VerticalGroupAttributeExample : MonoBehaviour
     [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
     [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
     public int BoxC, BoxD, BoxE;
-    public int BoxA1;
-
-    [BoxGroup("Multiple Stacked Boxes/Split/Left/Box B")]
-    public int BoxB1;
-
-    [VerticalGroup("Multiple Stacked Boxes/Split/Right")]
-    [BoxGroup("Multiple Stacked Boxes/Split/Right/Box C")]
-    public int BoxC1, BoxD1, BoxE1;
-
 }
