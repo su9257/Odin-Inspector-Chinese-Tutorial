@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\1.Essentials\TypeInfoBoxExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\1.Essentials\ValidateInputAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\1.Essentials\ValueDropdownAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\10.Meta\SuppressInvalidAttributeErrorExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\AssetListAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\AssetSelectorAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\2.TypeSpecifics\ChildGameObjectsOnlyAttributeExample.cs" />
@@ -175,6 +176,8 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\RangeAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\SpaceAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\TextAreaAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\9.Debug\ShowDrawerChainAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\9.Debug\ShowPropertyResolverAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\ExampleScript.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleHelper.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleTransform.cs" />
