@@ -166,6 +166,15 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\6.Conditionals\ShowIfAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\6.Conditionals\ShowIfGroupAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\6.Conditionals\ShowInInlineEditorsAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\7.Numbers\MaxValueAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\7.Numbers\MinMaxSliderAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\7.Numbers\MinValueAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\7.Numbers\ProgressBarAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\7.Numbers\PropertyRangeAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\7.Numbers\WrapAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\RangeAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\SpaceAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\TextAreaAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\ExampleScript.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleHelper.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleTransform.cs" />
