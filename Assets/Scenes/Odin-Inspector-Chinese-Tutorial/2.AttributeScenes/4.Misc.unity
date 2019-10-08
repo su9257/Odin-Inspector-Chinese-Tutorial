@@ -143,8 +143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObject: {fileID: 0}
   Speed: 0
-  Angle: 123123
-  Suffix: 123123123
+  Angle: 0
+  Suffix: 
   Expression: 
 --- !u!4 &24020438
 Transform:
@@ -247,6 +247,9 @@ MonoBehaviour:
   MyVector2Int:
     X: 0
     Y: 0
+  MyVector2Int_NoInline:
+    X: 0
+    Y: 0
 --- !u!4 &511212953
 Transform:
   m_ObjectHideFlags: 0
@@ -291,7 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyInt: 0
-  Tooltip: Dynamic tooltip.
+  Tooltip: Dynamic tooltip.1111111
 --- !u!4 &663937048
 Transform:
   m_ObjectHideFlags: 0
@@ -469,8 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3df51a1853a07a4381c3a318396a1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shader: {fileID: 0}
-  Material: {fileID: 0}
+  Shader: {fileID: 31, guid: 0000000000000000f000000000000000, type: 0}
+  Material: {fileID: 1879507709}
 --- !u!4 &1126276101
 Transform:
   m_ObjectHideFlags: 0
@@ -780,6 +783,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1879507709
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Legacy Shaders/Transparent/Bumped Diffuse
+  m_Shader: {fileID: 31, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2052263601
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035e1b4bff75b394d8f12966480a5407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NoRightClickList: 030000000500000000000000
+  NoRightClickList: 000000000300000005000000
   NoRightClickListOnListElements: 0000000000000000
   DisableRightClickCompletely: 0d00000011000000
   NoRightClickField: 19

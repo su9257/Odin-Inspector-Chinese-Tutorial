@@ -15,7 +15,7 @@ public class LabelTextAttributeExample : MonoBehaviour
     public int MyInt3;
 
     [InfoBox("Use $ to refer to a member string.")]
-    [LabelText("$MyInt3")]
+    [LabelText("$LabelText")]
     public string LabelText = "Dynamic label text";
 
     [InfoBox("Use @ to execute an expression.")]

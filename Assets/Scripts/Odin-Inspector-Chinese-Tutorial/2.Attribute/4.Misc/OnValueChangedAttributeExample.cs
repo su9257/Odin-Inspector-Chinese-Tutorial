@@ -8,12 +8,13 @@ public class OnValueChangedAttributeExample : MonoBehaviour
 
     [ShowInInspector]
     [EnumPaging, OnValueChanged("SetCurrentTool")]
-    [InfoBox("Changing this property will change the current selected tool in the Unity editor.")]
+    [InfoBox("更改此属性将更改Unity编辑器中当前选择的工具.")]
     private UnityEditor.Tool sceneTool;
 
     private void SetCurrentTool()
     {
         UnityEditor.Tools.current = this.sceneTool;
+        Debug.Log($"更改为：{UnityEditor.Tools.current}");
     }
 
     [OnValueChanged("CreateMaterial")]

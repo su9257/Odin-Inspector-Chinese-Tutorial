@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class PropertyTooltipAttributeExample : MonoBehaviour
 {
-    [PropertyTooltip("This is tooltip on an int property.")]
+    [PropertyTooltip("放在属性上显示对应的悬停提示.")]
     public int MyInt;
 
-    [InfoBox("Use $ to refer to a member string.")]
+    [InfoBox("使用$引用成员字符串.")]
     [PropertyTooltip("$Tooltip")]
     public string Tooltip = "Dynamic tooltip.";
 

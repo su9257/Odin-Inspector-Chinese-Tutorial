@@ -12,7 +12,9 @@ public class HideDuplicateReferenceBoxAttributeExample : MonoBehaviour
     [ShowInInspector]
     [HideDuplicateReferenceBox]
     public ReferenceTypeClass withoutReferenceBox;
+    
 
+    [Button("初始化",ButtonSizes.Large)]
     public void Setup()
     {
         this.firstObject = new ReferenceTypeClass();

@@ -1,11 +1,9 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DisableContextMenuAttributeExample : MonoBehaviour
 {
-    [InfoBox("DisableContextMenu disables all right-click context menus provided by Odin. It does not disable Unity's context menu.", InfoMessageType.Warning)]
+    [InfoBox("禁用所有由Odin提供的右键上下文菜单。它不会禁用Unity的上下文菜单.", InfoMessageType.Warning)]
     [DisableContextMenu]
     public int[] NoRightClickList = new int[] { 2, 3, 5 };
 
@@ -16,10 +14,8 @@ public class DisableContextMenuAttributeExample : MonoBehaviour
     public int[] DisableRightClickCompletely = new int[] { 13, 17 };
 
 
-
     [DisableContextMenu]
     public int NoRightClickField = 19;
 
     public int RightClickField = 19;
-
 }

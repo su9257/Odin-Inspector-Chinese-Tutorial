@@ -10,8 +10,8 @@ public class SuffixLabelAttributeExample : MonoBehaviour
 
     [Space(15)]
     [InfoBox(
-        "Using the Overlay property, the suffix label will be drawn on top of the property instead of behind it.\n" +
-        "Use this for a neat inline look.")]
+        "使用Overlay属性，后缀标签将绘制在属性的顶部而不是后面.\n" +
+        "使用它可以获得整洁的行内外观.")]
     [SuffixLabel("ms", Overlay = false)]
     public float Speed;
 
@@ -19,11 +19,11 @@ public class SuffixLabelAttributeExample : MonoBehaviour
     public float Angle;
 
     [Space(15)]
-    [InfoBox("The Suffix attribute also supports referencing a member string field, property, or method by using $.")]
+    [InfoBox("Suffix 属性还支持通过使用$来引用成员字符串字段、属性或方法.")]
     [SuffixLabel("$Suffix", Overlay = true)]
     public string Suffix = "Dynamic suffix label";
 
-    [InfoBox("The Suffix attribute also supports expressions by using @.")]
+    [InfoBox("Suffix属性还支持使用@表达式 .")]
     [SuffixLabel("@DateTime.Now.ToString(\"HH:mm:ss\")", true)]
     public string Expression;
 }

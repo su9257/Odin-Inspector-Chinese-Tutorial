@@ -18,25 +18,23 @@ public class InfoBoxAttributeExample : MonoBehaviour
     [InfoBox("Info box without an icon.", InfoMessageType.None)]
     public int D;
 
-    [Title("Conditional info boxes")]
-    public bool ToggleInfoBoxes;
+    [Title("有条件的信息框")]
+    public  bool ToggleInfoBoxes;
 
     [InfoBox("This info box is only shown while in editor mode.", InfoMessageType.Error, "IsInEditMode")]
     public float G;
-
-    [InfoBox("This info box is hideable by a static field.", "ToggleInfoBoxes")]
-    public float E;
-
-    [InfoBox("This info box is hideable by a static field.", "ToggleInfoBoxes")]
-    public float F;
-
-    [Title("Info box member reference and attribute expressions")]
-    [InfoBox("$InfoBoxMessage")]
-    [InfoBox("@\"Time: \" + DateTime.Now.ToString(\"HH:mm:ss\")")]
-    public string InfoBoxMessage = "My dynamic info box message";
-
     private static bool IsInEditMode()
     {
         return !Application.isPlaying;
     }
+
+    [InfoBox("此信息框可由静态字段隐藏.", "ToggleInfoBoxes")]
+    public float E;
+
+    [InfoBox("此信息框可由静态字段隐藏.", "ToggleInfoBoxes")]
+    public float F;
+
+    [InfoBox("$InfoBoxMessage")]
+    [InfoBox("@\"Time: \" + DateTime.Now.ToString(\"HH:mm:ss\")")]
+    public string InfoBoxMessage = "My dynamic info box message";
 }

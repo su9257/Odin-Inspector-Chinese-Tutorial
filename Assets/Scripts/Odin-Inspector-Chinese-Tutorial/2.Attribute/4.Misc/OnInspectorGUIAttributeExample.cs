@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class OnInspectorGUIAttributeExample : MonoBehaviour
 {
-    //[OnInspectorGUI("DrawPreview", append: true)]
-    //public Texture2D Texture = EditorIcons.OdinInspectorLogo;
 
     [OnInspectorGUI("DrawPreview", append: true)]
     public Texture2D Texture;
@@ -23,6 +21,6 @@ public class OnInspectorGUIAttributeExample : MonoBehaviour
     [OnInspectorGUI]
     private void OnInspectorGUI()
     {
-        UnityEditor.EditorGUILayout.HelpBox("OnInspectorGUI can also be used on both methods and properties", UnityEditor.MessageType.Info);
+        UnityEditor.EditorGUILayout.HelpBox("OnInspectorGUI还可以用于方法和属性", UnityEditor.MessageType.Info);
     }
 }

@@ -1,7 +1,5 @@
 ﻿using Sirenix.OdinInspector;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InlinePropertyAttributeExample : MonoBehaviour
@@ -12,7 +10,7 @@ public class InlinePropertyAttributeExample : MonoBehaviour
 
     [InlineProperty(LabelWidth = 13)]
     public Vector2Int MyVector2Int;
-
+    public Vector2Int MyVector2Int_NoInline;
     [Serializable]
     [InlineProperty(LabelWidth = 13)]
     public struct Vector3Int
