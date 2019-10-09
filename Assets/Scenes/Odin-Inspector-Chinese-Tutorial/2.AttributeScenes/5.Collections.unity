@@ -155,7 +155,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2882dbb08597404d9ff64edcfe9eef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloatList: []
+  FloatList:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   FloatRangeArray:
   - 0
   - 0
@@ -164,7 +186,7 @@ MonoBehaviour:
   ReadOnlyArray1: 010000000200000003000000
   ReadOnlyArray2: 010000000200000003000000
   SomeStructList:
-  - SomeObject: {fileID: 0}
+  - SomeObject: {fileID: 88724028}
     A: 0
     B: 0
     C: 0
