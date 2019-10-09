@@ -194,22 +194,26 @@ MonoBehaviour:
     Three: 0
   FiveItemsPerPage: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   IndexLabels:
-  - SomeString: 1231313
+  - SomeString: 1111
     One: 0
     Two: 0
     Three: 0
   MoreListSettings: 010000000200000003000000
   InjectListElementGUI:
-  - SomeString: 123123
-    One: 0
-    Two: 0
-    Three: 0
   - SomeString: 
     One: 0
     Two: 0
     Three: 0
+  - SomeString: 111
+    One: 0
+    Two: 0
+    Three: 0
+  - SomeString: 2222
+    One: 0
+    Two: 0
+    Three: 0
   CustomButtons: 000000000000000000000000
-  CustomAddBehaviour: 00000000010000000200000003000000040000000500000006000000
+  CustomAddBehaviour: 0000000001000000020000000300000004000000
 --- !u!1 &209343254
 GameObject:
   m_ObjectHideFlags: 0

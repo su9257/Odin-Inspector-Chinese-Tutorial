@@ -69,7 +69,7 @@ public class ListDrawerSettingsAttributeExample : MonoBehaviour
 
     private int CustomAddFunction()
     {
-        return this.CustomAddBehaviour.Count;
+        return this.CustomAddBehaviour.Count+100;
     }
 
 
