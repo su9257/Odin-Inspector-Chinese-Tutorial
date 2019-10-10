@@ -24,7 +24,7 @@ public class TableColumnWidthAttributeExample : MonoBehaviour
 
         [TableColumnWidth(60)]
         public int ID;
-
+        [TableColumnWidth(100)]
         public string Name;
     }
 }
