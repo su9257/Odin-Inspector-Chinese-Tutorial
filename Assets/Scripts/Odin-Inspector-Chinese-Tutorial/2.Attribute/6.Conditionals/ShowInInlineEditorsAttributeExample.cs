@@ -5,16 +5,7 @@ using UnityEngine;
 
 public class ShowInInlineEditorsAttributeExample : MonoBehaviour
 {
-    [InfoBox("Click the pen icon to open a new inspector window for the InlineObject too see the differences these attributes make.")]
+    [InfoBox("单击属性值打开一个新的检查窗口，也可以看到这些属性的不同.")]
     [InlineEditor(Expanded = true)]
     public MyInlineScriptableObject InlineObject;
-
-    public class MyInlineScriptableObject : ScriptableObject
-    {
-        [ShowInInlineEditors]
-        public string ShownInInlineEditor;
-
-        [HideInInlineEditors]
-        public string HiddenInInlineEditor;
-    }
 }

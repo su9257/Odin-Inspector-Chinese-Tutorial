@@ -5,28 +5,6 @@ using UnityEngine;
 
 public class HideInPrefabAssetsAttributeExample : MonoBehaviour
 {
-    [InfoBox("These attributes will only have an effect when inspecting a GameObject's component.")]
-    [HideInPrefabAssets]
+    [HideInPrefabAssets] //在Asset中且是预制体时隐藏
     public GameObject HiddenInPrefabAssets;
-
-    [HideInPrefabInstances]
-    public GameObject HiddenInPrefabInstances;
-
-    [HideInPrefabs]
-    public GameObject HiddenInPrefabs;
-
-    [HideInNonPrefabs]
-    public GameObject HiddenInNonPrefabs;
-
-    [DisableInPrefabAssets]
-    public GameObject DisabledInPrefabAssets;
-
-    [DisableInPrefabInstances]
-    public GameObject DisabledInPrefabInstances;
-
-    [DisableInPrefabs]
-    public GameObject DisabledInPrefabs;
-
-    [DisableInNonPrefabs]
-    public GameObject DisabledInNonPrefabs;
 }

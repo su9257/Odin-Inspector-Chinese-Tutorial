@@ -5,28 +5,6 @@ using UnityEngine;
 
 public class DisableInPrefabInstancesAttributeExample : MonoBehaviour
 {
-    [InfoBox("These attributes will only have an effect when inspecting a GameObject's component.")]
-    [HideInPrefabAssets]
-    public GameObject HiddenInPrefabAssets;
-
-    [HideInPrefabInstances]
-    public GameObject HiddenInPrefabInstances;
-
-    [HideInPrefabs]
-    public GameObject HiddenInPrefabs;
-
-    [HideInNonPrefabs]
-    public GameObject HiddenInNonPrefabs;
-
-    [DisableInPrefabAssets]
-    public GameObject DisabledInPrefabAssets;
-
-    [DisableInPrefabInstances]
+    [DisableInPrefabInstances]//在hierarchy中为预制体时则禁用此属性
     public GameObject DisabledInPrefabInstances;
-
-    [DisableInPrefabs]
-    public GameObject DisabledInPrefabs;
-
-    [DisableInNonPrefabs]
-    public GameObject DisabledInNonPrefabs;
 }

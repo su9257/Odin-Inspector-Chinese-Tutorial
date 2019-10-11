@@ -12,6 +12,7 @@ public class DisableIfAttributeExample : MonoBehaviour
 
     public bool IsToggled;
 
+    //指定的属性的值是否与给定的值一致，如果结果为true，则灰态对应的属性
     [DisableIf("SomeEnum", InfoMessageType.Info)]
     public Vector2 Info;
 
@@ -21,6 +22,7 @@ public class DisableIfAttributeExample : MonoBehaviour
     [DisableIf("SomeEnum", InfoMessageType.Warning)]
     public Vector2 Warning;
 
+    //默认判断bool或者是否为null 为null则是false
     [DisableIf("IsToggled")]
     public int DisableIfToggled;
 

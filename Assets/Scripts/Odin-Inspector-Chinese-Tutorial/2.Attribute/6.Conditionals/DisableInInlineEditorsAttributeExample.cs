@@ -8,12 +8,4 @@ public class DisableInInlineEditorsAttributeExample : MonoBehaviour
     [InfoBox("Click the pen icon to open a new inspector window for the InlineObject too see the difference this attribute make.")]
     [InlineEditor(Expanded = true)]
     public MyInlineScriptableObject InlineObject ;
-
-    public class MyInlineScriptableObject : ScriptableObject
-    {
-        public string AlwaysEnabled;
-
-        [DisableInInlineEditors]
-        public string DisabledInInlineEditor;
-    }
 }
