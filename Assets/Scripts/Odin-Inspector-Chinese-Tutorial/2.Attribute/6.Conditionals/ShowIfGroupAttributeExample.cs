@@ -1,6 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShowIfGroupAttributeExample : MonoBehaviour
@@ -18,8 +16,8 @@ public class ShowIfGroupAttributeExample : MonoBehaviour
     [ShowIfGroup("Box/Toggle")]
     public Vector3 X, Y;
 
-    // Like the regular If-attributes, ShowIfGroup also supports specifying values.
-    // You can also chain multiple ShowIfGroup attributes together for more complex behaviour.
+    //与常规if属性一样，ShowIfGroup也支持指定值。
+    //您还可以将多个ShowIfGroup属性链接在一起，以实现更复杂的行为。
     [ShowIfGroup("Box/Toggle/EnumField", Value = InfoMessageType.Info)]
     [BoxGroup("Box/Toggle/EnumField/Border", ShowLabel = false)]
     public string Name;
@@ -27,8 +25,8 @@ public class ShowIfGroupAttributeExample : MonoBehaviour
     [BoxGroup("Box/Toggle/EnumField/Border")]
     public Vector3 Vector;
 
-    // ShowIfGroup will by default use the name of the group,
-    // but you can also use the MemberName property to override this.
+    // ShowIfGroup将默认使用组的名称，
+    //但是您也可以使用MemberName属性来覆盖它。
     [ShowIfGroup("RectGroup", MemberName = "Toggle")]
     public Rect Rect;
 }
