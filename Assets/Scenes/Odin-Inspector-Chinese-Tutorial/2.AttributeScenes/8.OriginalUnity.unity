@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4bf82100277e57418536e2f32348ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Field: 2
-  Dynamic: 6
+  Field: 7
+  Dynamic: 27
   Max: 100
 --- !u!4 &1037878339
 Transform:

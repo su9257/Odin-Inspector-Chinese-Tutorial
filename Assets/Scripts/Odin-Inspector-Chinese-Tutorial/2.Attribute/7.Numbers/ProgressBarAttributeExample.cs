@@ -8,17 +8,20 @@ public class ProgressBarAttributeExample : MonoBehaviour
     [ProgressBar(0, 100)]
     public int ProgressBar = 50;
 
-    [HideLabel]
     [ProgressBar(-100, 100, r: 1, g: 1, b: 1, Height = 30)]
     public short BigColoredProgressBar = 50;
 
-    [ProgressBar(0, 10, 0, 1, 0, Segmented = true)]
+    [ProgressBar(0, 10, 0, 1, 0, Segmented = true, DrawValueLabel = true)]
     public int SegmentedColoredBar = 5;
 
     [ProgressBar(0, 100, ColorMember = "GetHealthBarColor")]
     public float DynamicHealthBarColor = 50;
+    private Color GetHealthBarColor(float value)
+    {
+        return Color.Lerp(Color.red, Color.green, Mathf.Pow(value / 100f, 2));
+    }
 
-    // The min and max properties also support attribute expressions with the $ symbol.
+    // 最小和最大属性也支持带有$符号的属性表达式.
     [BoxGroup("Dynamic Range")]
     [ProgressBar("Min", "Max")]
     public float DynamicProgressBar = 50;
@@ -39,11 +42,6 @@ public class ProgressBarAttributeExample : MonoBehaviour
     private float StackedHealthProgressBar
     {
         get { return this.StackedHealth % 100.01f; }
-    }
-
-    private Color GetHealthBarColor(float value)
-    {
-        return Color.Lerp(Color.red, Color.green, Mathf.Pow(value / 100f, 2));
     }
 
     private Color GetStackedHealthColor()

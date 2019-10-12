@@ -1,6 +1,4 @@
 ﻿using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MinMaxSliderAttributeExample : MonoBehaviour
@@ -11,14 +9,14 @@ public class MinMaxSliderAttributeExample : MonoBehaviour
     [MinMaxSlider(-10, 10, true)]
     public Vector2 WithFields = new Vector2(-3, 4);
 
-    [InfoBox("You can also assign the min max values dynamically by referring to members.")]
+    [InfoBox("您还可以通过引用成员来动态分配最小最大值。.")]
     [MinMaxSlider("DynamicRange", true)]
     public Vector2 DynamicMinMax = new Vector2(25, 50);
 
     [MinMaxSlider("Min", 10f, true)]
     public Vector2 DynamicMin = new Vector2(2, 7);
 
-    [InfoBox("You can also use attribute expressions with the @ symbol.")]
+    [InfoBox("您还可以使用带有@符号的属性表达式.")]
     [MinMaxSlider("@DynamicRange.x", "@DynamicRange.y * 10f", true)]
     public Vector2 Expressive = new Vector2(0, 450);
 

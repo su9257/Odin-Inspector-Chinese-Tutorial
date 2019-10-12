@@ -141,12 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df10299aedf1ed4eb5b2e9a8beb4000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntMinValue0: 0
-  IntMaxValue0: 0
-  FloatMinValue0: 0
-  FloatMaxValue0: 0
-  Vector3MinValue0: {x: 0, y: 0, z: 0}
-  Vector3MaxValue0: {x: 0, y: 0, z: 0}
+  IntMinValue0: 206
+  FloatMinValue0: 0.06
+  Vector3MinValue0: {x: 10, y: 10, z: 10}
 --- !u!4 &5564895
 Transform:
   m_ObjectHideFlags: 0
@@ -159,7 +156,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500593137
 GameObject:
@@ -272,11 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eeb6b11de3a040488dad00d796475c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntWrapFrom0To100: 10
-  FloatWrapFrom0To100: 39.04
-  Vector3WrapFrom0To100: {x: 98.39, y: 98.39, z: 98.39}
-  AngleWrap: 13.96
-  RadianWrap: 4.32
+  IntWrapFrom0To100: 55
+  FloatWrapFrom0To100: 96.7
+  Vector3WrapFrom0To100: {x: 0.92, y: 0.89, z: 0.77}
+  AngleWrap: 353.4
+  RadianWrap: 3.7
 --- !u!4 &770157117
 Transform:
   m_ObjectHideFlags: 0
@@ -320,14 +317,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76a69792676f0d4895f403df2413cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProgressBar: 59
-  BigColoredProgressBar: 69
-  SegmentedColoredBar: 1
-  DynamicHealthBarColor: 78.00159
-  DynamicProgressBar: 79.90892
-  Min: 0
-  Max: 100
-  StackedHealth: 140.8
+  ProgressBar: 79
+  BigColoredProgressBar: -34
+  SegmentedColoredBar: 4
+  DynamicHealthBarColor: 92.18258
+  DynamicProgressBar: 60.493515
+  Min: 3.4
+  Max: 117.09
+  StackedHealth: 111
 --- !u!4 &1351733600
 Transform:
   m_ObjectHideFlags: 0
@@ -371,9 +368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d17f24fcaf93f246b96a7f87c8e833d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Field: 2
-  Dynamic: 6
-  Max: 100
+  Field: 5
+  Dynamic: 369
+  Max: 402
 --- !u!4 &1628429622
 Transform:
   m_ObjectHideFlags: 0
@@ -417,12 +414,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6ba5990a16da5409d0bb2e563a2726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinMaxValueSlider: {x: -6.943012, y: -0.7565832}
-  WithFields: {x: -1.5172553, y: 4}
-  DynamicMinMax: {x: 30.191956, y: 42.64856}
-  DynamicMin: {x: 3.056974, y: 7.9987745}
-  Expressive: {x: 0, y: 450}
-  DynamicRange: {x: 0, y: 50}
+  MinMaxValueSlider: {x: -3.0313861, y: 2.5307906}
+  WithFields: {x: -3.0995946, y: 2.3714125}
+  DynamicMinMax: {x: 24.186092, y: 70.945}
+  DynamicMin: {x: 5.45367, y: 6.7251015}
+  Expressive: {x: 216.81758, y: 533.4}
+  DynamicRange: {x: 0.4, y: 81.62}
 --- !u!4 &1791019722
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +432,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894670024
 GameObject:
@@ -466,12 +463,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373c6e32bd99d9947b8e4c395faf19a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntMinValue0: 0
   IntMaxValue0: 0
-  FloatMinValue0: 0
   FloatMaxValue0: 0
-  Vector3MinValue0: {x: 0, y: 5.19, z: 0}
-  Vector3MaxValue0: {x: 0, y: 0, z: 0}
+  Vector3MaxValue0: {x: -10, y: -1.3, z: -2.1}
 --- !u!4 &1894670026
 Transform:
   m_ObjectHideFlags: 0
