@@ -177,6 +177,12 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\8.OriginalUnity\TextAreaAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\9.Debug\ShowDrawerChainAttributeExample.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\2.Attribute\9.Debug\ShowPropertyResolverAttributeExample.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\MyHybridEditorWindowOne.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\MyMenuEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\MySimpleEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\MyTargetEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\MyTreeEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\SomeWindow.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\ExampleScript.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleHelper.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ExampleTransform.cs" />
@@ -776,9 +782,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
-      <Project>{91D90497-2D76-CD2B-5FA0-01F2D9E507F7}</Project>
-      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8834368E-CDDA-6A71-5DA5-1E625EF09FBB}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinValidator.csproj">
       <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
@@ -787,6 +793,10 @@
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
       <Project>{D67E8E75-D777-15CA-9820-C60DDAA7BFFE}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
+      <Project>{91D90497-2D76-CD2B-5FA0-01F2D9E507F7}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
