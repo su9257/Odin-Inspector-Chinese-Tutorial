@@ -9,5 +9,11 @@ public class MyScripty : ScriptableObject
     public string MyText = ExampleHelper.GetString();
     [TextArea(10, 15)]
     public string Box;
+
+    [Button(ButtonSizes.Large)]
+    public void TestInvoke()
+    {
+        
+    }
 }
 

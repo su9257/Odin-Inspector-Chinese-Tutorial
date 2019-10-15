@@ -4,12 +4,12 @@ using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using System.Collections.Generic;
 
-    public class SomeWindow : OdinEditorWindow
+    public class SomeWindowOne : OdinEditorWindow
     {
-        [MenuItem("My Game/My Window")]
+        [MenuItem("My Game/My Window1")]
         private static void OpenWindow()
         {
-            GetWindow<SomeWindow>().Show();
+            GetWindow<SomeWindowOne>().Show();
         }
 
         [PropertyOrder(-10)]
@@ -34,11 +34,11 @@ using System.Collections.Generic;
         public void SomeButton5() { }
 
         [TableList]
-        public List<SomeType> SomeTableData;
+        public List<SomeTypeOne> SomeTableData;
     }
 
-    public class SomeType
-    {
+    public class SomeTypeOne
+{
         [TableColumnWidth(50)]
         [HorizontalGroup("Toggle")]
         public bool Toggle;
