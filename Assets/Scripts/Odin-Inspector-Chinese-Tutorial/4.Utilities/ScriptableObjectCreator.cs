@@ -104,9 +104,7 @@ public class ScriptableObjectCreator : OdinMenuEditorWindow
     {
         if (t != null && scriptableObjectTypes.Contains(t))
         {
-            Debug.Log($"名称为{t.Name}");
             var name = t.Name.Split('`').First().SplitPascalCase();//主要是为了去除泛型相关 例如：Sirenix.Utilities.GlobalConfig`1[Sirenix.Serialization.GlobalSerializationConfig]
-            //Debug.Log($"t.BaseType:{t.BaseType}");
             return GetMenuPathForType(t.BaseType) + "/" + name;
         }
         return "";
@@ -122,7 +120,6 @@ public class ScriptableObjectCreator : OdinMenuEditorWindow
         //scroll 内容滑动条的XY坐标
         scroll = GUILayout.BeginScrollView(scroll);
         {
-            //Debug.Log(index + "----" + scroll);
             base.DrawEditor(index);
         }
         GUILayout.EndScrollView();
@@ -143,11 +140,13 @@ public class ScriptableObjectCreator : OdinMenuEditorWindow
         if (previewObject)
         {
             var dest = targetFolder + "/new " + MenuTree.Selection.First().Name.ToLower() + ".asset";
-            dest = AssetDatabase.GenerateUniqueAssetPath(dest);
+            dest = AssetDatabase.GenerateUniqueAssetPath(dest);//创建唯一路径 重名后缀 +1
+            Debug.Log($"要创建的为{previewObject}");
             AssetDatabase.CreateAsset(previewObject, dest);
-            AssetDatabase.Refresh();
-            Selection.activeObject = previewObject;
-            EditorApplication.delayCall += Close;
+            //AssetDatabase.SaveAssets();
+            //AssetDatabase.Refresh();
+            //Selection.activeObject = previewObject;
+            //EditorApplication.delayCall += Close;
         }
     }
 }

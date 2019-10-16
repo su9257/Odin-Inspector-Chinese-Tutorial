@@ -13,7 +13,7 @@ public class MyScripty : ScriptableObject
     [Button(ButtonSizes.Large)]
     public void TestInvoke()
     {
-        
+
     }
 }
 

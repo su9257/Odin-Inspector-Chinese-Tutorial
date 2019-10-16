@@ -10,7 +10,7 @@ public class TypeInfoBoxExample : MonoBehaviour
     public MyScripty Scripty = null;
     public void Awake()
     {
-        Scripty = ExampleHelper.GetScriptableObject<MyScripty>();
+        //Scripty = ExampleHelper.GetScriptableObject<MyScripty>();
     }
 
 

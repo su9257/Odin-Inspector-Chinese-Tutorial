@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class OnValueChangedAttributeExample : MonoBehaviour
 {
-
     [ShowInInspector]
     [EnumPaging, OnValueChanged("SetCurrentTool")]
     [InfoBox("更改此属性将更改Unity编辑器中当前选择的工具.")]
+#pragma warning disable CS0649
     private UnityEditor.Tool sceneTool;
-
+#pragma warning restore
     private void SetCurrentTool()
     {
         UnityEditor.Tools.current = this.sceneTool;
