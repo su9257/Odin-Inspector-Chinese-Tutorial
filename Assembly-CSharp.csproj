@@ -195,6 +195,7 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\MyInlineScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\MyScripty.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ShowMonoScript.cs" />
+    <Compile Include="Assets\Scripts\Test\ExampleScriptGUI.cs" />
     <None Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\TutorialAuxiliaryClass\ReadMe.txt" />
     <None Include="Assets\TutorialAsset\Low poly 3D game character_1\Documentation of Models.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -787,6 +788,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Sirenix.OdinValidator.csproj">
+      <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
+      <Name>Sirenix.OdinValidator</Name>
+    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
       <Project>{D67E8E75-D777-15CA-9820-C60DDAA7BFFE}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
@@ -794,10 +799,6 @@
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
       <Project>{91D90497-2D76-CD2B-5FA0-01F2D9E507F7}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinValidator.csproj">
-      <Project>{521699F8-ECE4-087F-E659-0B587DFC07D4}</Project>
-      <Name>Sirenix.OdinValidator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
