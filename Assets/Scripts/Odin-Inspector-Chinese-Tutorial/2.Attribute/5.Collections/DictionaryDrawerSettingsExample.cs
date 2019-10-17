@@ -24,8 +24,8 @@ public class DictionaryDrawerSettingsExample : MonoBehaviour
     [ShowInInspector]
     public Dictionary<string, string> StringStringDictionary = new Dictionary<string, string>()
 {
-    { "One", ExampleHelper.GetString() },
-    { "Two", ExampleHelper.GetString() },
+    { "One", TestExampleHelper.GetString() },
+    { "Two", TestExampleHelper.GetString() },
 };
 
     [InfoBox("默认是<color=green><size=15><b>Value折叠</b></size></color>方式打开，只在第一次生效")]

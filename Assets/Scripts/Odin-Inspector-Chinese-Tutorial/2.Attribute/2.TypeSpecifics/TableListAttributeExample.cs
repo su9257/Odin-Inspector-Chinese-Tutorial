@@ -48,7 +48,7 @@ public class TableListAttributeExample : MonoBehaviour
         public Texture Icon;
 
         [TextArea]
-        public string Description = ExampleHelper.GetString();
+        public string Description = TestExampleHelper.GetString();
 
         [VerticalGroup("Combined Column"), LabelWidth(22)]
         public string A, B, C;

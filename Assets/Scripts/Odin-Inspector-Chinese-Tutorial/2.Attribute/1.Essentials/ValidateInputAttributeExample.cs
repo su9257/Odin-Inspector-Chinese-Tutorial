@@ -6,8 +6,8 @@ public class ValidateInputAttributeExample : MonoBehaviour
 {
 
     [ValidateInput("MustBeNull", "这个字段应该为空。")]
-    public MyScripty DefaultMessage;
-    private bool MustBeNull(MyScripty scripty)
+    public TestMyScripty DefaultMessage;
+    private bool MustBeNull(TestMyScripty scripty)
     {
         return scripty == null;
     }

@@ -23,7 +23,7 @@ public class TestGrid : MonoBehaviour
     [Button(ButtonSizes.Large)]
     public void CreatAsset()
     {
-        ExampleHelper.GetScriptableObject<MyScripty>();
+        TestExampleHelper.GetScriptableObject<TestMyScripty>();
     }
 
     // Update is called once per frame

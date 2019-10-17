@@ -5,23 +5,23 @@ public class InlineEditorAttributeExample : MonoBehaviour
 {
     [Title("Boxed / Default")]
     [InlineEditor(InlineEditorObjectFieldModes.Boxed)]
-    public ExampleTransform Boxed;
+    public TestExampleTransform Boxed;
 
     [Title("Foldout")]
     [InlineEditor(InlineEditorObjectFieldModes.Foldout)]
-    public ExampleTransform Foldout;
+    public TestExampleTransform Foldout;
 
     [Title("Hide ObjectField")]
     [InlineEditor(InlineEditorObjectFieldModes.CompletelyHidden)]
-    public ExampleTransform CompletelyHidden;
+    public TestExampleTransform CompletelyHidden;
 
     [Title("Show ObjectField if null")]
     [ShowInInspector]
     [InlineEditor(InlineEditorObjectFieldModes.Hidden)]
-    public ExampleTransform OnlyHiddenWhenNotNull;
+    public TestExampleTransform OnlyHiddenWhenNotNull;
 
     [InlineEditor]
-    public ExampleTransform InlineComponent ;
+    public TestExampleTransform InlineComponent ;
 
     [InlineEditor(InlineEditorModes.FullEditor)]
     public Material FullInlineEditor;

@@ -7,7 +7,7 @@ public class TypeInfoBoxExample : MonoBehaviour
     public MyType MyObject = new MyType();
 
     [InfoBox("双击此此段的value值，可在inspecter中查看对应ScriptableObject信息")]
-    public MyScripty Scripty = null;
+    public TestMyScripty Scripty = null;
     public void Awake()
     {
         //Scripty = ExampleHelper.GetScriptableObject<MyScripty>();

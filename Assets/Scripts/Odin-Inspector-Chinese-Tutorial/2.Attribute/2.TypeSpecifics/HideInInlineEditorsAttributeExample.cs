@@ -5,10 +5,10 @@ using UnityEngine;
     {
     [InfoBox("Click the pen icon to open a new inspector window for the InlineObject too see the differences these attributes make.")]
     [InlineEditor(Expanded = true)]
-    public MyInlineScriptableObject InlineObject;
+    public TestMyInlineScriptableObject InlineObject;
 
     private void Start()
         {
-            InlineObject =  ExampleHelper.GetScriptableObject<MyInlineScriptableObject>();
+            InlineObject =  TestExampleHelper.GetScriptableObject<TestMyInlineScriptableObject>();
         }
     }
