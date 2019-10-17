@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\1.QuickStart\7.How To Make An OdinEditorWindow\Editor\HowToMakeAnOdinEditorWindow.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\1.QuickStart\7.How To Make An OdinEditorWindow\Editor\TestWindow.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\4.Utilities\Editor\PageSliderAttributeDrawer.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\4.Utilities\Editor\ScriptableObjectCreator.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/UnityProject/Odin-Inspector-Chinese-Tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

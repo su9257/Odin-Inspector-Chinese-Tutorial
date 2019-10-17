@@ -873,11 +873,8 @@ MonoBehaviour:
   Object: {fileID: 102900000, guid: aed43e7d4ead01e43bc00b681475187a, type: 3}
   AssetList:
   - {fileID: 11400000, guid: 08379ccefc05200459f90a1c0711a340, type: 2}
-  - {fileID: 11400000, guid: b9801b8f8d2c37d4795c1ba88c703a40, type: 2}
   - {fileID: 11400000, guid: 81484c383be194644aba23c328f22cd6, type: 2}
   - {fileID: 11400000, guid: 54a4bdc47d124744bb8c20c227e52ebe, type: 2}
-  - {fileID: 11400000, guid: 3f814a05778baeb478cf911b0c5be1ab, type: 2}
-  - {fileID: 11400000, guid: 4f015c80d4c076a44b662d33088a9efe, type: 2}
   AutoPopulatedWhenInspected:
   - {fileID: 7501504051930011881, guid: 36f452690498e3749b14f8c78f84f43f, type: 3}
   - {fileID: 345351844444276693, guid: a45230430a9ae1c49a4cd69fb5a97a73, type: 3}

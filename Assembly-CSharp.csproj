@@ -188,6 +188,9 @@
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\MyTreeEditorWindow.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\3.OdinWindow\SomeWindow.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\4.Utilities\AnimatedButton.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\4.Utilities\PageSliderAttribute.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\4.Utilities\SomeScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\5.OdinSerializer\1.QuickStart\ExampleOdinSerializedScript.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\ExampleScript.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\Test\TestAnimatedButton.cs" />
     <Compile Include="Assets\Scripts\Odin-Inspector-Chinese-Tutorial\Test\TestGrid.cs" />
