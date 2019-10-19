@@ -4,6 +4,8 @@
 
 ---------------
 
->官方地址：https://odininspector.com/
+> 官方地址：https://odininspector.com/
 
->Unity AssetStore地址：https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041
+> Unity AssetStore地址：https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041
+
+> 中文教程相关地址：https://www.jianshu.com/p/f1b27e85bc35
