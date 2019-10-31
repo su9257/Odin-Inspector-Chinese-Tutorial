@@ -7,7 +7,7 @@ using Sirenix.Utilities;
 
 public class OdinToolkit : OdinMenuEditorWindow
 {
-    [MenuItem("Tools/Odin Toolkit")]
+    [MenuItem("Tools/Odin工具箱")]
     private static void OpenWindow()
     {
         var window = GetWindow<OdinToolkit>();
@@ -23,14 +23,12 @@ public class OdinToolkit : OdinMenuEditorWindow
 
         this.titleContent = new GUIContent("Odin 工具箱");
 
+        #region 工具箱功能列表
         tree.Add("菜单风格设置", tree.DefaultMenuStyle,EditorIcons.House);
-        tree.Add("一键搜索重复文件", new OneKeySearchDuplicateFiles(),EditorIcons.OdinInspectorLogo) ;
-        tree.Add("SomeType", new SomeType());
-        tree.Add("MyTargetEditorWindow", new MyTargetEditorWindow());
-        tree.Add("Settings", GeneralDrawerConfig.Instance);
-        tree.Add("Utilities", new TextureUtilityEditor());
-        tree.Add("MyHybridEditorWindowOne", new MyHybridEditorWindowOne());
-        //tree.EnumerateTree().AddThumbnailIcons(); 
+        tree.Add("Ediator 协程", CreateInstance(typeof(EditorCoroutineDemo)), EditorIcons.Timer);
+        tree.Add("一键搜索重复文件", CreateInstance(typeof(OneKeySearchDuplicateFiles)),EditorIcons.FileCabinet) ;
+        #endregion
+
         return tree;
     }
 

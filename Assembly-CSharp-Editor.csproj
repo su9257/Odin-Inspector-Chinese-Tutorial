@@ -195,6 +195,17 @@
     <Compile Include="Assets\Scripts\Editor\4.Utilities\SomeScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Editor\5.OdinSerializer\1.QuickStart\ExampleOdinSerializedScript.cs" />
     <Compile Include="Assets\Scripts\Editor\ExampleScript.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Coroutines\EditorCoroutine.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Coroutines\EditorCoroutineFactory.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\EditorCoroutineDemo.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\interface\ICoroutine.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\interface\ICoroutineFactory.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\interface\IUpdateService.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\interface\IYield.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Updates\CoroutineUpdate.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Updates\EditorCoroutineService.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Updates\EditorCoroutineUpdate.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Yields\Yield.cs" />
     <Compile Include="Assets\Scripts\Editor\OdinToolkit\OdinToolkit.cs" />
     <Compile Include="Assets\Scripts\Editor\OdinToolkit\OneKeySearchDuplicateFiles.cs" />
     <Compile Include="Assets\Scripts\Editor\Test\TestAnimatedButton.cs" />
