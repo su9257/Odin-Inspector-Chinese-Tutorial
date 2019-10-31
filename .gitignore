@@ -1,3 +1,5 @@
 Library/
 Temp/
 Assets/Plugins/Sirenix/
+Logs/
+obj/
