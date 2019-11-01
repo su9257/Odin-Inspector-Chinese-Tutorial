@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 [TypeInfoBox("批量选中或者取消对应UI上的Raycast")]
 public class OneKeyChangeRaycastTarget : SerializedScriptableObject
-    {
+{
 
     private bool selectRaycastComplete;
     private bool cancelRaycastComplete;
@@ -14,7 +14,7 @@ public class OneKeyChangeRaycastTarget : SerializedScriptableObject
     [PreviewField(50)]
     [OnValueChanged("SelectRaycastListValueChangeCallBack")]
     [HorizontalGroup("Raycast")]
-    [PropertySpace(10,10)]
+    [PropertySpace(10, 10)]
     [BoxGroup("Raycast/Left", false)]
     [LabelText("需要选中Raycast拖入进来")]
     public List<GameObject> SelectRaycastList = new List<GameObject>();
@@ -28,7 +28,7 @@ public class OneKeyChangeRaycastTarget : SerializedScriptableObject
     [PreviewField(50)]
     [OnValueChanged("CancelRaycastListValueChangeCallBack")]
     [PropertySpace(10, 10)]
-    [BoxGroup("Raycast/Right",false)]
+    [BoxGroup("Raycast/Right", false)]
     [LabelText("需要取消Raycast拖入进来")]
     public List<GameObject> CancelRaycastList = new List<GameObject>();
 
@@ -54,8 +54,14 @@ public class OneKeyChangeRaycastTarget : SerializedScriptableObject
                 graphicArray[k].raycastTarget = true;
                 EditorUtility.SetDirty(graphicArray[k]);
             }
-
-            if (!AssetDatabase.Contains(SelectRaycastList[i]) &&PrefabUtility.IsPartOfPrefabInstance(SelectRaycastList[i]))//如果物体在场景中（Hierarchy中）而且还是预制体
+            GameObject tempObject = SelectRaycastList[i];
+            bool isPrefabInstance = PrefabUtility.IsPartOfPrefabInstance(tempObject);
+            bool isPrefabAsset = PrefabUtility.IsPartOfPrefabAsset(tempObject);
+            if (isPrefabAsset)
+            {
+                PrefabUtility.SavePrefabAsset(SelectRaycastList[i]);
+            }
+            if (isPrefabInstance)
             {
                 PrefabUtility.ApplyPrefabInstance(SelectRaycastList[i], InteractionMode.UserAction);
             }
@@ -82,8 +88,15 @@ public class OneKeyChangeRaycastTarget : SerializedScriptableObject
                 graphicArray[k].raycastTarget = false;
                 EditorUtility.SetDirty(graphicArray[k]);
             }
+            GameObject tempObject = CancelRaycastList[i];
+            bool isPrefabInstance = PrefabUtility.IsPartOfPrefabInstance(tempObject);
+            bool isPrefabAsset = PrefabUtility.IsPartOfPrefabAsset(tempObject);
 
-            if (!AssetDatabase.Contains(CancelRaycastList[i]) && PrefabUtility.IsPartOfPrefabInstance(CancelRaycastList[i]))//如果物体在场景中（Hierarchy中）而且还是预制体
+            if (isPrefabAsset)
+            {
+                PrefabUtility.SavePrefabAsset(CancelRaycastList[i]);
+            }
+            if (isPrefabInstance)
             {
                 PrefabUtility.ApplyPrefabInstance(CancelRaycastList[i], InteractionMode.UserAction);
             }
