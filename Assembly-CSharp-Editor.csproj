@@ -207,6 +207,7 @@
     <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Updates\EditorCoroutineUpdate.cs" />
     <Compile Include="Assets\Scripts\Editor\OdinToolkit\EditorCoroutine\Yields\Yield.cs" />
     <Compile Include="Assets\Scripts\Editor\OdinToolkit\OdinToolkit.cs" />
+    <Compile Include="Assets\Scripts\Editor\OdinToolkit\OneKeyChangeRaycastTarget.cs" />
     <Compile Include="Assets\Scripts\Editor\OdinToolkit\OneKeySearchDuplicateFiles.cs" />
     <Compile Include="Assets\Scripts\Editor\Test\TestAnimatedButton.cs" />
     <Compile Include="Assets\Scripts\Editor\Test\TestGrid.cs" />

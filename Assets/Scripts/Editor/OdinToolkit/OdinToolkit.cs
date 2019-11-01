@@ -27,6 +27,7 @@ public class OdinToolkit : OdinMenuEditorWindow
         tree.Add("菜单风格设置", tree.DefaultMenuStyle,EditorIcons.House);
         tree.Add("Ediator 协程", CreateInstance(typeof(EditorCoroutineDemo)), EditorIcons.Timer);
         tree.Add("一键搜索重复文件", CreateInstance(typeof(OneKeySearchDuplicateFiles)),EditorIcons.FileCabinet) ;
+        tree.Add("一键更改Raycast", CreateInstance(typeof(OneKeyChangeRaycastTarget)), EditorIcons.RulerRect);
         #endregion
 
         return tree;
