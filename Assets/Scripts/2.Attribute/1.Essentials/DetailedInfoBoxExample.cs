@@ -36,6 +36,6 @@ public class DetailedInfoBoxExample : MonoBehaviour
 
     public bool NoVisibleFunction()
     {
-        return false;
+        return string.IsNullOrEmpty(noVisibleIfMessage);
     }
 }
