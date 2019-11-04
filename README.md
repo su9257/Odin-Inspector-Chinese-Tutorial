@@ -16,3 +16,7 @@
 ### 贡献者/感谢
   * **[@shitake](https://github.com/molingyu)**
   * **[@Lepozuk](https://github.com/Lepozuk)**
+  
+### MindMap
+
+![](https://github.com/su9257/Odin-Inspector-Chinese-Tutorial/blob/master/Assets/MarkDown/MindMap/Unity%20Attribute%20Inspecator.png)
