@@ -10,12 +10,12 @@ using UnityEngine;
 
     // The script will also be hidden for the ShowMonoScript object if MonoScripts are hidden globally.
     //如果MonoScripts是全局隐藏的，那么ShowMonoScript对象的脚本也将被隐藏。
-    public TestShowMonoScript Shown;
+    public TestShowMonoScript Show;
 
         public void Start()
         {
             Hidden = TestExampleHelper.GetScriptableObject<TestHideMonoScript>();
-            Shown = TestExampleHelper.GetScriptableObject<TestShowMonoScript>();
+            Show = TestExampleHelper.GetScriptableObject<TestShowMonoScript>();
         }
     }
 

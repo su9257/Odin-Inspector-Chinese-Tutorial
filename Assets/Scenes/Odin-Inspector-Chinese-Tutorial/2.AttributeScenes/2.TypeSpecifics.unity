@@ -2119,7 +2119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hidden: {fileID: 11400000, guid: 0b4226e535d7b9b4a95421270c3b97ff, type: 2}
-  Shown: {fileID: 11400000, guid: 74f55229bb3998f4c9efb1bdaec67fd0, type: 2}
+  Show: {fileID: 11400000, guid: 74f55229bb3998f4c9efb1bdaec67fd0, type: 2}
 --- !u!4 &2114786357
 Transform:
   m_ObjectHideFlags: 0
