@@ -18,6 +18,9 @@ namespace D_Game.Demo
 
         [ValidateInput("@OddNumber % 2 == 1", "@OddNumber + \" is too normal!\"")]
         public int OddNumber;
+
+        [RegexAttribute]
+        public string validator = "菜鸟海澜";
     }
 }
 

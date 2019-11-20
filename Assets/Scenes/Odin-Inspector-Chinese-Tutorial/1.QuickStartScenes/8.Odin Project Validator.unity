@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 274225036}
-  - component: {fileID: 274225035}
+  - component: {fileID: 274225037}
   m_Layer: 0
   m_Name: 8.Odin Project Validator
   m_TagString: Untagged
@@ -129,22 +129,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &274225035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274225034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4162af2b77fa678479d59f53e0144e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  Prefab: {fileID: 0}
-  Child: {fileID: 0}
-  OddNumber: 312
 --- !u!4 &274225036
 Transform:
   m_ObjectHideFlags: 0
@@ -159,6 +143,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &274225037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274225034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4162af2b77fa678479d59f53e0144e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Prefab: {fileID: 0}
+  Child: {fileID: 0}
+  OddNumber: 0
+  validator: "***\u83DC\u9E1F\u6D77\u6F9C\uFF0C\u6211\u64CD\uFF0C\u83DC\u9E1F\u6D77\u6F9C"
 --- !u!1 &989702571
 GameObject:
   m_ObjectHideFlags: 0
