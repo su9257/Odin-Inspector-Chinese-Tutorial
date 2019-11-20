@@ -8,4 +8,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/4.Utilities/4.Utilities.unity
     guid: 0d706948b5c68f74baba3c271056a5ac
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/1.Essentials.unity
+    guid: 5ae162fe53c1af449851518e363a2404
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/2.TypeSpecifics.unity
+    guid: 7ede7cb5336709b4a875f27608b276dd
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/3.Groups.unity
+    guid: f26b55c5745a3da48a68facae5e8fff3
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/4.Misc.unity
+    guid: a79d3dd092d6d7844ab3976ccfb7bd84
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/5.Collections.unity
+    guid: 83eec43fb551af74b980038b9ca249a2
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/6.Conditionals.unity
+    guid: 44e345358dba216418ed2cd017b3c01b
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/7.Numbers.unity
+    guid: ed01255a3ef80b146b79aa9f3324a50c
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/8.OriginalUnity.unity
+    guid: b006a8f4fdc767d409760e9b635a15d5
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/9.Debug.unity
+    guid: bfee464e52681c34da57063470d4f119
+  - enabled: 1
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/10.MetaFile.unity
+    guid: 6fff05fa38df1964e868a985a8bcbd41
   m_configObjects: {}
