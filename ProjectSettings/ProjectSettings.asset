@@ -592,7 +592,7 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
-    1: ODIN_INSPECTOR
+    1: ODIN_INSPECTOR;ODIN_VALIDATOR
     7: ODIN_INSPECTOR
   platformArchitecture: {}
   scriptingBackend: {}

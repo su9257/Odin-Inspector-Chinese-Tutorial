@@ -7,9 +7,10 @@ using UnityEngine.UI;
 [TypeInfoBox("批量选中或者取消对应UI上的Raycast")]
 public class OneKeyChangeRaycastTarget : SerializedScriptableObject
 {
-
+#pragma warning disable CS0414  
     private bool selectRaycastComplete;
     private bool cancelRaycastComplete;
+#pragma warning restore CS0414 
 
     [PreviewField(50)]
     [OnValueChanged("SelectRaycastListValueChangeCallBack")]

@@ -19,9 +19,9 @@ public class ExampleOdinSerializedScript : SerializedMonoBehaviour
 
     private void Start()
     {
-        Debug.Log(firstDictionary.Count);
-        Debug.Log(myUnityReference.secondDictionary_Unity.Count);
-        Debug.Log(myOdinReference.secondDictionary_Odin.Count);
+        //Debug.Log(firstDictionary.Count);
+        //Debug.Log(myUnityReference.secondDictionary_Unity.Count);
+        //Debug.Log(myOdinReference.secondDictionary_Odin.Count);
     }
     
 }

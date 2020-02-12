@@ -292,6 +292,183 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &466348706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466348709}
+  - component: {fileID: 466348708}
+  - component: {fileID: 466348707}
+  m_Layer: 0
+  m_Name: Avoiding Unity's Infinite Depth Warning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &466348707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466348706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d78a4cecbc8aa43a30b9853f8ca68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OdinNodeB
+      Entry: 7
+      Data: 0|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 1|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 2|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 3|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 4|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 5|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 6|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 7|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 8|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 9|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 10|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 11|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 12|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 13|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 14|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 15|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 7
+      Data: 16|OdinNodeB, Assembly-CSharp
+    - Name: cycle
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &466348708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466348706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f756c2ed9892b446b895a811e1b1c7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityNodeB:
+    cycle:
+      cycle:
+        cycle:
+          cycle:
+            cycle:
+              cycle: {}
+--- !u!4 &466348709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466348706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658461705
 GameObject:
   m_ObjectHideFlags: 0
