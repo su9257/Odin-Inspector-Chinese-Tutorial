@@ -2,6 +2,7 @@
 ### 中文教程
 > 表现想当不错，制作编辑器工具的绝佳插件。如果你也认同，请支持他们！
 
+> Warning: 本项目不包含 Odin Inspector 和 Odin Validator，运行前请确保你已将其导入到该项目中。
 ---------------
 
 > 官方地址：https://odininspector.com/
