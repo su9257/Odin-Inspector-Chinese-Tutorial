@@ -16,8 +16,8 @@
 ******************
 
 ### 贡献者/感谢
-  * **[@shitake](https://github.com/molingyu)**
   * **[@Lepozuk](https://github.com/Lepozuk)**
+  * ~~**[@shitake]()**~~
   
 ### MindMap
 
