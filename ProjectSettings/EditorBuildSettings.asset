@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/4.Utilities/4.Utilities.unity
+    path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/4.Utilities/4.Utilities_AnimatedButton.unity
     guid: 0d706948b5c68f74baba3c271056a5ac
   - enabled: 1
     path: Assets/Scenes/Odin-Inspector-Chinese-Tutorial/2.AttributeScenes/1.Essentials.unity
