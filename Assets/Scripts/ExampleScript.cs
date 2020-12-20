@@ -6,6 +6,7 @@ using System;
 
 public class ExampleScript : MonoBehaviour
 {
+    public string tempName1;
     [FilePath(Extensions = ".unity")]
     public string ScenePath;
     [FilePath(Extensions = ".cs")]
