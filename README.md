@@ -9,7 +9,7 @@
 
 > Unity AssetStore地址：https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041
 
-> 中文教程相关地址：https://www.jianshu.com/p/f1b27e85bc35
+> 中文教程相关地址：https://aihailan.com/%e9%9d%a9%e5%91%bd%e6%80%a7unity-%e7%bc%96%e8%be%91%e5%99%a8%e6%89%a9%e5%b1%95%e5%b7%a5%e5%85%b7-odininspector%e7%b3%bb%e5%88%97%e6%95%99%e7%a8%8b/
 
 ### [FAQ(常见问题解答)](https://www.jianshu.com/p/c8bbff58c289)
 
